@@ -1,0 +1,196 @@
+<svg class="bmad-diagram" xmlns="http://www.w3.org/2000/svg" width="940" height="1150" viewBox="0 0 940 1150" role="img" aria-labelledby="wb-title wb-desc">
+  <title id="wb-title">BMad Method workflow for a change to an existing codebase</title>
+  <desc id="wb-desc">Start from the existing codebase. If AGENTS.md is missing or stale, run bmad-project-context to write a verified block of agent instructions; otherwise skip it. Then size the change. One session: bmad-build reads the repo, reuses what it finds, done. Epic, two to ten sessions: bmad-spec writes SPEC.md and stories.yaml, bmad-build runs once per story, then bmad-retrospective judges the epic against the spec. Project, several epics: bmad-prd reads the existing docs first, bmad-ux only when there are new screens or flows, bmad-architecture scans the code and ratifies its conventions, bmad-create-epics-and-stories, bmad-sprint-planning with its PASS, CONCERNS or FAIL readiness gate, then the epic path once per epic. Available at any step: bmad, bmad-project-context, bmad-review, bmad-party-mode, bmad-advanced-elicitation and bmad-correct-course.</desc>
+  <defs>
+    <marker id="wb-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path class="head" d="M 0 0 L 10 5 L 0 10 z"/>
+    </marker>
+  </defs>
+
+  <g fill="var(--dg-ink)">
+    <text x="470" y="40" font-size="20" font-weight="700" text-anchor="middle" letter-spacing="1" data-i18n="brownfield-build">BROWNFIELD BUILD</text>
+    <text x="470" y="64" font-size="14" text-anchor="middle" data-i18n="the-code-is-the-context">The code is the context. Size the change, then run the smallest path that fits.</text>
+
+    <!-- Entry row: context check, then the sizing gate -->
+    <rect class="node cap" x="20" y="118" width="150" height="40" rx="20"/>
+    <text x="95" y="143" font-size="13" font-weight="600" text-anchor="middle" data-i18n="existing-codebase">Existing codebase</text>
+    <path class="edge" d="M172 138 H188" stroke-linecap="round" marker-end="url(#wb-arrow)"/>
+
+    <path class="node gate" d="M275 112 L360 138 L275 164 L190 138 z"/>
+    <text x="275" y="142" font-size="12" font-weight="600" text-anchor="middle" data-i18n="agents-md-current">AGENTS.md current?</text>
+    <path class="edge" d="M362 138 H378" stroke-linecap="round" marker-end="url(#wb-arrow)"/>
+    <text class="k" x="370" y="130" text-anchor="middle" data-i18n="edge-no-context">no</text>
+    <path class="edge" d="M275 112 V92 H700 V106" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#wb-arrow)"/>
+    <text class="k" x="488" y="88" text-anchor="middle" data-i18n="edge-yes-skip-context">yes: skip</text>
+
+    <g transform="translate(380 100)">
+      <rect class="node" width="200" height="76" rx="2"/>
+      <text x="12" y="23" font-size="13" font-weight="700" class="mono" data-i18n="bmad-project-context">bmad-project-context</text>
+      <text x="12" y="45" class="sub" data-i18n="setup-adopt-refresh-audit">setup · adopt · refresh · audit</text>
+      <text x="12" y="62" class="sub" data-i18n="verified-block-in-agents-md">verified block in AGENTS.md</text>
+    </g>
+    <path class="edge" d="M582 138 H598" stroke-linecap="round" marker-end="url(#wb-arrow)"/>
+
+    <path class="node gate" d="M700 108 L800 138 L700 168 L600 138 z"/>
+    <text x="700" y="142" font-size="12" font-weight="600" text-anchor="middle" data-i18n="how-big-is-the-change">How big is the change?</text>
+
+    <!-- The sizing bus: one drop per column -->
+    <path class="edge" d="M700 170 V195 M165 195 H795" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path class="edge" d="M165 195 V226" stroke-linecap="round" marker-end="url(#wb-arrow)"/>
+    <path class="edge" d="M480 195 V226" stroke-linecap="round" marker-end="url(#wb-arrow)"/>
+    <path class="edge" d="M795 195 V226" stroke-linecap="round" marker-end="url(#wb-arrow)"/>
+    <text class="k" x="172" y="216" data-i18n="edge-one-session">1 session</text>
+    <text class="k" x="487" y="216" data-i18n="edge-2-10-sessions">2–10 sessions</text>
+    <text class="k" x="788" y="216" text-anchor="end" data-i18n="edge-20-plus-sessions">20+ sessions</text>
+
+    <!-- One session column -->
+    <g transform="translate(20 230)">
+      <rect class="node" width="290" height="730" rx="2"/>
+      <text x="145" y="30" font-size="15" font-weight="700" text-anchor="middle" letter-spacing="1" data-i18n="one-session">ONE SESSION</text>
+      <text x="145" y="50" class="sub mid" data-i18n="a-bounded-change">a bounded change</text>
+
+      <g transform="translate(20 66)">
+        <rect class="node hot" width="250" height="74" rx="2"/>
+        <text x="12" y="23" font-size="13" font-weight="700" class="mono" data-i18n="bmad-build">bmad-build</text>
+        <text x="12" y="45" class="sub" data-i18n="clarify-plan-implement-review">clarify · plan · implement · review</text>
+        <text x="12" y="62" class="sub" data-i18n="reads-the-repo-reuses-what-it-finds">reads the repo, reuses what it finds</text>
+      </g>
+      <path class="edge" d="M145 140 V164" stroke-linecap="round" marker-end="url(#wb-arrow)"/>
+      <rect class="node cap" x="85" y="166" width="120" height="40" rx="20" stroke="var(--dg-ok)"/>
+      <text x="145" y="191" font-size="13" font-weight="600" text-anchor="middle" data-i18n="done-one-session">Done</text>
+
+      <text x="145" y="270" class="sub mid" data-i18n="build-looks-at-the-code-first">Build looks at the code first</text>
+      <text x="145" y="288" class="sub mid" data-i18n="and-stops-to-ask-when-it">and stops to ask when it</text>
+      <text x="145" y="306" class="sub mid" data-i18n="cannot-settle-the-intent">cannot settle the intent.</text>
+      <text x="145" y="342" class="sub mid" data-i18n="an-obvious-low-risk-edit">An obvious, low-risk edit</text>
+      <text x="145" y="360" class="sub mid" data-i18n="needs-no-bmad-at-all">needs no BMad at all.</text>
+    </g>
+
+    <!-- Epic column -->
+    <g transform="translate(335 230)">
+      <rect class="node" width="290" height="730" rx="2"/>
+      <text x="145" y="30" font-size="15" font-weight="700" text-anchor="middle" letter-spacing="1" data-i18n="epic">EPIC</text>
+      <text x="145" y="50" class="sub mid" data-i18n="one-outcome-several-sessions">one outcome, several sessions</text>
+
+      <g transform="translate(20 66)">
+        <rect class="node" width="250" height="74" rx="2"/>
+        <text x="12" y="23" font-size="13" font-weight="700" class="mono" data-i18n="bmad-spec">bmad-spec</text>
+        <text x="12" y="45" class="sub" data-i18n="spec-md-stories-yaml">SPEC.md, stories.yaml</text>
+        <text x="12" y="62" class="sub" data-i18n="brownfield-md-companion-when-needed">brownfield.md companion when needed</text>
+      </g>
+      <path class="edge" d="M145 140 V164" stroke-linecap="round" marker-end="url(#wb-arrow)"/>
+      <g transform="translate(20 166)">
+        <rect class="node hot" width="250" height="74" rx="2"/>
+        <text x="12" y="23" font-size="13" font-weight="700" class="mono" data-i18n="bmad-build-per-story">bmad-build</text>
+        <text x="12" y="45" class="sub" data-i18n="clarify-plan-implement-review-2">clarify · plan · implement · review</text>
+        <text x="12" y="62" class="sub" data-i18n="one-session-per-story">one session per story</text>
+      </g>
+      <path class="edge" d="M145 240 V262" stroke-linecap="round" marker-end="url(#wb-arrow)"/>
+      <path class="node gate" d="M145 264 L215 286 L145 308 L75 286 z"/>
+      <text x="145" y="290" font-size="12" font-weight="600" text-anchor="middle" data-i18n="more-stories">More stories?</text>
+      <path class="edge" d="M75 286 H6 V203 H18" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#wb-arrow)"/>
+      <text class="k" x="15" y="250" transform="rotate(-90 15 250)" data-i18n="edge-yes-next-story">yes: next story</text>
+      <path class="edge" d="M145 308 V332" stroke-linecap="round" marker-end="url(#wb-arrow)"/>
+      <text class="k" x="152" y="324" data-i18n="edge-no-stories">no</text>
+      <g transform="translate(20 334)">
+        <rect class="node" width="250" height="58" rx="2"/>
+        <text x="12" y="23" font-size="13" font-weight="700" class="mono" data-i18n="bmad-retrospective">bmad-retrospective</text>
+        <text x="12" y="45" class="sub" data-i18n="judges-the-epic-against-the-spec">judges the epic against the spec</text>
+      </g>
+      <path class="edge" d="M145 392 V416" stroke-linecap="round" marker-end="url(#wb-arrow)"/>
+      <rect class="node cap" x="85" y="418" width="120" height="40" rx="20" stroke="var(--dg-ok)"/>
+      <text x="145" y="443" font-size="13" font-weight="600" text-anchor="middle" data-i18n="done-epic">Done</text>
+
+      <text x="145" y="600" class="sub mid" data-i18n="a-project-runs-this-column">A project runs this column</text>
+      <text x="145" y="618" class="sub mid" data-i18n="once-per-epic">once per epic.</text>
+    </g>
+
+    <!-- Project column -->
+    <g transform="translate(650 230)">
+      <rect class="node" width="290" height="730" rx="2"/>
+      <text x="145" y="30" font-size="15" font-weight="700" text-anchor="middle" letter-spacing="1" data-i18n="project">PROJECT</text>
+      <text x="145" y="50" class="sub mid" data-i18n="several-epics-plan-around-what-exists">several epics: plan around what already exists</text>
+
+      <g transform="translate(20 66)">
+        <rect class="node" width="250" height="58" rx="2"/>
+        <text x="12" y="23" font-size="13" font-weight="700" class="mono" data-i18n="bmad-prd">bmad-prd</text>
+        <text x="12" y="45" class="sub" data-i18n="reads-the-existing-docs-first">reads the existing docs first</text>
+      </g>
+      <path class="edge" d="M145 124 V146" stroke-linecap="round" marker-end="url(#wb-arrow)"/>
+      <path class="node gate" d="M145 148 L235 172 L145 196 L55 172 z"/>
+      <text x="145" y="176" font-size="12" font-weight="600" text-anchor="middle" data-i18n="new-screens-or-flows">New screens or flows?</text>
+      <path class="edge" d="M145 196 V220" stroke-linecap="round" marker-end="url(#wb-arrow)"/>
+      <text class="k" x="152" y="212" data-i18n="edge-yes-ux">yes</text>
+      <text class="k" x="240" y="166" data-i18n="edge-no-ux">no</text>
+      <path class="edge" d="M235 172 H283 V292 H152" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#wb-arrow)"/>
+      <g transform="translate(20 222)">
+        <rect class="node" width="250" height="58" rx="2"/>
+        <text x="12" y="23" font-size="13" font-weight="700" class="mono" data-i18n="bmad-ux">bmad-ux</text>
+        <text x="12" y="45" class="sub" data-i18n="design-md-experience-md">DESIGN.md, EXPERIENCE.md</text>
+      </g>
+      <path class="edge" d="M145 280 V304" stroke-linecap="round" marker-end="url(#wb-arrow)"/>
+      <g transform="translate(20 306)">
+        <rect class="node" width="250" height="74" rx="2"/>
+        <text x="12" y="23" font-size="13" font-weight="700" class="mono" data-i18n="bmad-architecture">bmad-architecture</text>
+        <text x="12" y="45" class="sub" data-i18n="scans-the-code-ratifies-its-conventions">scans the code, ratifies its conventions</text>
+        <text x="12" y="62" class="sub" data-i18n="architecture-spine-md">ARCHITECTURE-SPINE.md</text>
+      </g>
+      <path class="edge" d="M145 380 V404" stroke-linecap="round" marker-end="url(#wb-arrow)"/>
+      <g transform="translate(20 406)">
+        <rect class="node" width="250" height="58" rx="2"/>
+        <text x="12" y="23" font-size="12" font-weight="700" class="mono" data-i18n="bmad-create-epics-and-stories">bmad-create-epics-and-stories</text>
+        <text x="12" y="45" class="sub" data-i18n="epic-files-with-stories">epic files with stories</text>
+      </g>
+      <path class="edge" d="M145 464 V488" stroke-linecap="round" marker-end="url(#wb-arrow)"/>
+      <g transform="translate(20 490)">
+        <rect class="node" width="250" height="74" rx="2"/>
+        <text x="12" y="23" font-size="13" font-weight="700" class="mono" data-i18n="bmad-sprint-planning">bmad-sprint-planning</text>
+        <text x="12" y="45" class="sub" data-i18n="readiness-gate-pass-concerns-fail">readiness gate: PASS / CONCERNS / FAIL</text>
+        <text x="12" y="62" class="sub" data-i18n="sprint-status-yaml">sprint-status.yaml</text>
+      </g>
+      <path class="edge" d="M145 564 V588" stroke-linecap="round" marker-end="url(#wb-arrow)"/>
+      <g transform="translate(20 590)">
+        <rect class="node" width="250" height="58" rx="2"/>
+        <text x="12" y="23" font-size="13" font-weight="600" data-i18n="epic-path-x-epics">Epic path × epics</text>
+        <text x="12" y="45" class="sub" data-i18n="spec-build-per-story-retrospective">spec · Build per story · retrospective</text>
+      </g>
+      <path class="edge" d="M18 619 H-18" stroke-linecap="round" marker-end="url(#wb-arrow)"/>
+      <path class="edge" d="M145 648 V672" stroke-linecap="round" marker-end="url(#wb-arrow)"/>
+      <rect class="node cap" x="85" y="674" width="120" height="40" rx="20" stroke="var(--dg-ok)"/>
+      <text x="145" y="699" font-size="13" font-weight="600" text-anchor="middle" data-i18n="done-project">Done</text>
+    </g>
+
+    <!-- Available at any step -->
+    <g transform="translate(20 990)">
+      <rect class="panel" width="900" height="146" rx="2"/>
+      <text class="k panel-title" x="16" y="24" data-i18n="at-any-step">At any step</text>
+      <g transform="translate(16 44)">
+        <rect class="node" width="70" height="36" rx="2"/>
+        <text x="35" y="23" font-size="12" font-weight="700" text-anchor="middle" class="mono" data-i18n="bmad">bmad</text>
+      </g>
+      <g transform="translate(100 44)">
+        <rect class="node" width="150" height="36" rx="2"/>
+        <text x="75" y="23" font-size="12" font-weight="700" text-anchor="middle" class="mono" data-i18n="bmad-project-context-chip">bmad-project-context</text>
+      </g>
+      <g transform="translate(264 44)">
+        <rect class="node" width="95" height="36" rx="2"/>
+        <text x="47" y="23" font-size="12" font-weight="700" text-anchor="middle" class="mono" data-i18n="bmad-review">bmad-review</text>
+      </g>
+      <g transform="translate(373 44)">
+        <rect class="node" width="120" height="36" rx="2"/>
+        <text x="60" y="23" font-size="12" font-weight="700" text-anchor="middle" class="mono" data-i18n="bmad-party-mode">bmad-party-mode</text>
+      </g>
+      <g transform="translate(507 44)">
+        <rect class="node" width="180" height="36" rx="2"/>
+        <text x="90" y="23" font-size="12" font-weight="700" text-anchor="middle" class="mono" data-i18n="bmad-advanced-elicitation">bmad-advanced-elicitation</text>
+      </g>
+      <g transform="translate(701 44)">
+        <rect class="node" width="145" height="36" rx="2"/>
+        <text x="72" y="23" font-size="12" font-weight="700" text-anchor="middle" class="mono" data-i18n="bmad-correct-course">bmad-correct-course</text>
+      </g>
+      <text x="16" y="98" class="sub" data-i18n="build-follows-what-it-finds">Build follows what it finds. To break a pattern, say so in the request and write why in the spec.</text>
+      <text x="16" y="114" class="sub" data-i18n="keep-the-greenfield-prd-archived">Keep the greenfield PRD archived, out of reach of an ordinary change; the code is the context.</text>
+      <text x="16" y="130" class="sub" data-i18n="record-a-pitfall-correct-course">Record a pitfall with bmad-project-context when an agent gets something wrong; correct course handles a significant mid-sprint change.</text>
+    </g>
+  </g>
+</svg>

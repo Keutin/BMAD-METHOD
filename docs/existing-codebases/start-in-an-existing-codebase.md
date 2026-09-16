@@ -21,6 +21,8 @@ For one that needs several coding sessions, run `bmad-spec`, then a
 Build for each piece, then
 optionally `bmad-retrospective`. If it is bigger than that, treat it as a project and follow [Choose a Planning Path](../plan/choose-a-planning-path.md).
 
+![Start from the existing codebase, run bmad-project-context when AGENTS.md is missing or stale, then size the change: one session goes straight to bmad-build, an epic runs bmad-spec then Build per story and a retrospective, and a project runs PRD, UX when screens change, architecture that ratifies the existing conventions, epics and stories, sprint planning, then the epic path once per epic; core skills available at any step](/diagrams/bmad-workflow-brownfield.svg)
+
 Too little planning costs one Build run: Build looks at the code
 first, and stops to ask when it cannot settle the intent. Too much
 planning costs documents nobody reads. When unsure, ask `bmad-help`
