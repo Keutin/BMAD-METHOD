@@ -50,6 +50,8 @@ If you can give `bmad-spec` a complete intent, start there. If you need to
 go through the ideation/planning paces first, choose a path in
 [Choose a Planning Path](./plan/choose-a-planning-path.md).
 
+![Four phases left to right: analysis (brainstorming, forge idea, deep recon, brief or PRFAQ), planning (PRD, then UX when there is a UI), solutioning (architecture, epics and stories, sprint planning with its readiness gate), and implementation (spec per epic, Build per story with its review layers, retrospective, more epics or done), with core skills available at any step](/diagrams/bmad-workflow-greenfield.svg)
+
 **Your idea is still vague, or you are not sure it is a good one.**
 Generate options or [pressure-test the idea](./plan/explore-and-validate-an-idea.md),
 then gather evidence with [Deep Recon](./plan/research-a-decision.md).
