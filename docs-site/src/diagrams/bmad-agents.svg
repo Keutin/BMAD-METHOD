@@ -1,0 +1,187 @@
+<svg class="bmad-diagram" xmlns="http://www.w3.org/2000/svg" width="940" height="1016" viewBox="0 0 940 1016" role="img" aria-labelledby="wa-title wa-desc">
+  <title id="wa-title">The five BMad Method agents and their menu codes</title>
+  <desc id="wa-desc">Each agent has a colour used for its steps in the workflow diagrams. Mary, Business Analyst, bmad-agent-analyst, cyan: BP bmad-brainstorming; MR, DR, TR, CR and UV bmad-deep-recon for market, domain, technical, competitive and user-voice research; TS bmad-deep-recon to choose between technologies; CB bmad-product-brief; WB bmad-prfaq; PC bmad-project-context. John, Product Manager, bmad-agent-pm, green: PRD bmad-prd; CE bmad-create-epics-and-stories; IR bmad-sprint-planning readiness gate; CC bmad-correct-course. Sally, UX Designer, bmad-agent-ux-designer, purple: CU bmad-ux. Winston, System Architect, bmad-agent-architect, orange: CA bmad-architecture; IR bmad-sprint-planning readiness gate. Amelia, Senior Software Engineer, bmad-agent-dev, indigo: BD bmad-build; QA bmad-qa-generate-e2e-tests; CR bmad-code-review; SP bmad-sprint-planning; ER bmad-retrospective. No agent: bmad, bmad-forge-idea, bmad-spec, bmad-build-auto, bmad-walkthrough, bmad-review, bmad-party-mode, bmad-advanced-elicitation, bmad-customize. Agents are optional; every skill also runs on its own, and codes are scoped to their agent.</desc>
+
+  <g fill="var(--dg-ink)">
+    <text x="470" y="40" font-size="20" font-weight="700" text-anchor="middle" letter-spacing="1" data-i18n="agents-and-their-menus">AGENTS AND THEIR MENUS</text>
+    <text x="470" y="64" font-size="14" text-anchor="middle" data-i18n="load-an-agent-then-type-a-code">Load an agent, then type a code from its menu. Its colour marks its steps in the workflow diagrams.</text>
+
+    <!-- Mary, Analyst -->
+    <g class="agent-analyst" transform="translate(20 96)">
+      <rect class="node tone" width="900" height="204" rx="2"/>
+      <rect class="swatch" width="6" height="204"/>
+      <circle class="swatch" cx="34" cy="28" r="9"/>
+      <text class="badge" x="34" y="32">M</text>
+      <text x="52" y="33" font-size="16" font-weight="700" data-i18n="mary">Mary</text>
+      <text x="24" y="56" class="sub" data-i18n="business-analyst">Business Analyst</text>
+      <text x="24" y="74" class="sub mono" data-i18n="bmad-agent-analyst">bmad-agent-analyst</text>
+      <path class="edge soft tone" d="M200 14 V190"/>
+
+      <rect class="code-chip" x="216" y="15" width="40" height="22" rx="2"/>
+      <text x="236" y="30" font-size="12" font-weight="700" text-anchor="middle" class="mono" data-i18n="code-bp">BP</text>
+      <text x="376" y="31" font-size="12" font-weight="700" class="mono" data-i18n="bmad-brainstorming">bmad-brainstorming</text>
+      <text x="610" y="31" class="sub" data-i18n="guided-brainstorming">guided brainstorming session</text>
+
+      <rect class="code-chip" x="216" y="45" width="120" height="22" rx="2"/>
+      <text x="276" y="60" font-size="12" font-weight="700" text-anchor="middle" class="mono" data-i18n="code-mr-dr-tr-cr-uv">MR DR TR CR UV</text>
+      <text x="376" y="61" font-size="12" font-weight="700" class="mono" data-i18n="bmad-deep-recon">bmad-deep-recon</text>
+      <text x="610" y="61" class="sub" data-i18n="market-domain-technical-competitive-user-voice">market, domain, technical, competitive, user voice</text>
+
+      <rect class="code-chip" x="216" y="75" width="40" height="22" rx="2"/>
+      <text x="236" y="90" font-size="12" font-weight="700" text-anchor="middle" class="mono" data-i18n="code-ts">TS</text>
+      <text x="376" y="91" font-size="12" font-weight="700" class="mono" data-i18n="bmad-deep-recon-select">bmad-deep-recon</text>
+      <text x="610" y="91" class="sub" data-i18n="choose-between-technologies">choose between technologies, vendors or tools</text>
+
+      <rect class="code-chip" x="216" y="105" width="40" height="22" rx="2"/>
+      <text x="236" y="120" font-size="12" font-weight="700" text-anchor="middle" class="mono" data-i18n="code-cb">CB</text>
+      <text x="376" y="121" font-size="12" font-weight="700" class="mono" data-i18n="bmad-product-brief">bmad-product-brief</text>
+      <text x="610" y="121" class="sub" data-i18n="create-or-update-a-product-brief">create or update a product brief</text>
+
+      <rect class="code-chip" x="216" y="135" width="40" height="22" rx="2"/>
+      <text x="236" y="150" font-size="12" font-weight="700" text-anchor="middle" class="mono" data-i18n="code-wb">WB</text>
+      <text x="376" y="151" font-size="12" font-weight="700" class="mono" data-i18n="bmad-prfaq">bmad-prfaq</text>
+      <text x="610" y="151" class="sub" data-i18n="working-backwards-prfaq">Working Backwards PRFAQ challenge</text>
+
+      <rect class="code-chip" x="216" y="165" width="40" height="22" rx="2"/>
+      <text x="236" y="180" font-size="12" font-weight="700" text-anchor="middle" class="mono" data-i18n="code-pc">PC</text>
+      <text x="376" y="181" font-size="12" font-weight="700" class="mono" data-i18n="bmad-project-context">bmad-project-context</text>
+      <text x="610" y="181" class="sub" data-i18n="verified-agent-instructions">verified agent instructions in AGENTS.md</text>
+    </g>
+
+    <!-- John, Product Manager -->
+    <g class="agent-pm" transform="translate(20 314)">
+      <rect class="node tone" width="900" height="144" rx="2"/>
+      <rect class="swatch" width="6" height="144"/>
+      <circle class="swatch" cx="34" cy="28" r="9"/>
+      <text class="badge" x="34" y="32">J</text>
+      <text x="52" y="33" font-size="16" font-weight="700" data-i18n="john">John</text>
+      <text x="24" y="56" class="sub" data-i18n="product-manager">Product Manager</text>
+      <text x="24" y="74" class="sub mono" data-i18n="bmad-agent-pm">bmad-agent-pm</text>
+      <path class="edge soft tone" d="M200 14 V130"/>
+
+      <rect class="code-chip" x="216" y="15" width="40" height="22" rx="2"/>
+      <text x="236" y="30" font-size="12" font-weight="700" text-anchor="middle" class="mono" data-i18n="code-prd">PRD</text>
+      <text x="376" y="31" font-size="12" font-weight="700" class="mono" data-i18n="bmad-prd">bmad-prd</text>
+      <text x="610" y="31" class="sub" data-i18n="create-update-or-validate-a-prd">create, update or validate a PRD</text>
+
+      <rect class="code-chip" x="216" y="45" width="40" height="22" rx="2"/>
+      <text x="236" y="60" font-size="12" font-weight="700" text-anchor="middle" class="mono" data-i18n="code-ce">CE</text>
+      <text x="376" y="61" font-size="12" font-weight="700" class="mono" data-i18n="bmad-create-epics-and-stories">bmad-create-epics-and-stories</text>
+      <text x="610" y="61" class="sub" data-i18n="epics-and-stories-listing">epics and stories that drive development</text>
+
+      <rect class="code-chip" x="216" y="75" width="40" height="22" rx="2"/>
+      <text x="236" y="90" font-size="12" font-weight="700" text-anchor="middle" class="mono" data-i18n="code-ir">IR</text>
+      <text x="376" y="91" font-size="12" font-weight="700" class="mono" data-i18n="bmad-sprint-planning">bmad-sprint-planning</text>
+      <text x="610" y="91" class="sub" data-i18n="implementation-readiness-gate">implementation readiness gate only</text>
+
+      <rect class="code-chip" x="216" y="105" width="40" height="22" rx="2"/>
+      <text x="236" y="120" font-size="12" font-weight="700" text-anchor="middle" class="mono" data-i18n="code-cc">CC</text>
+      <text x="376" y="121" font-size="12" font-weight="700" class="mono" data-i18n="bmad-correct-course">bmad-correct-course</text>
+      <text x="610" y="121" class="sub" data-i18n="significant-change-mid-implementation">significant change found mid-implementation</text>
+    </g>
+
+    <!-- Sally, UX Designer -->
+    <g class="agent-ux" transform="translate(20 472)">
+      <rect class="node tone" width="900" height="84" rx="2"/>
+      <rect class="swatch" width="6" height="84"/>
+      <circle class="swatch" cx="34" cy="28" r="9"/>
+      <text class="badge" x="34" y="32">S</text>
+      <text x="52" y="33" font-size="16" font-weight="700" data-i18n="sally">Sally</text>
+      <text x="24" y="56" class="sub" data-i18n="ux-designer">UX Designer</text>
+      <text x="24" y="74" class="sub mono" data-i18n="bmad-agent-ux-designer">bmad-agent-ux-designer</text>
+      <path class="edge soft tone" d="M200 14 V70"/>
+
+      <rect class="code-chip" x="216" y="15" width="40" height="22" rx="2"/>
+      <text x="236" y="30" font-size="12" font-weight="700" text-anchor="middle" class="mono" data-i18n="code-cu">CU</text>
+      <text x="376" y="31" font-size="12" font-weight="700" class="mono" data-i18n="bmad-ux">bmad-ux</text>
+      <text x="610" y="31" class="sub" data-i18n="ux-design-md-experience-md">UX design: DESIGN.md, EXPERIENCE.md</text>
+    </g>
+
+    <!-- Winston, Architect -->
+    <g class="agent-architect" transform="translate(20 570)">
+      <rect class="node tone" width="900" height="84" rx="2"/>
+      <rect class="swatch" width="6" height="84"/>
+      <circle class="swatch" cx="34" cy="28" r="9"/>
+      <text class="badge" x="34" y="32">W</text>
+      <text x="52" y="33" font-size="16" font-weight="700" data-i18n="winston">Winston</text>
+      <text x="24" y="56" class="sub" data-i18n="system-architect">System Architect</text>
+      <text x="24" y="74" class="sub mono" data-i18n="bmad-agent-architect">bmad-agent-architect</text>
+      <path class="edge soft tone" d="M200 14 V70"/>
+
+      <rect class="code-chip" x="216" y="15" width="40" height="22" rx="2"/>
+      <text x="236" y="30" font-size="12" font-weight="700" text-anchor="middle" class="mono" data-i18n="code-ca">CA</text>
+      <text x="376" y="31" font-size="12" font-weight="700" class="mono" data-i18n="bmad-architecture">bmad-architecture</text>
+      <text x="610" y="31" class="sub" data-i18n="architecture-spine">architecture spine: ARCHITECTURE-SPINE.md</text>
+
+      <rect class="code-chip" x="216" y="45" width="40" height="22" rx="2"/>
+      <text x="236" y="60" font-size="12" font-weight="700" text-anchor="middle" class="mono" data-i18n="code-ir-architect">IR</text>
+      <text x="376" y="61" font-size="12" font-weight="700" class="mono" data-i18n="bmad-sprint-planning-architect">bmad-sprint-planning</text>
+      <text x="610" y="61" class="sub" data-i18n="implementation-readiness-gate-architect">implementation readiness gate only</text>
+    </g>
+
+    <!-- Amelia, Developer -->
+    <g class="agent-dev" transform="translate(20 668)">
+      <rect class="node tone" width="900" height="174" rx="2"/>
+      <rect class="swatch" width="6" height="174"/>
+      <circle class="swatch" cx="34" cy="28" r="9"/>
+      <text class="badge" x="34" y="32">A</text>
+      <text x="52" y="33" font-size="16" font-weight="700" data-i18n="amelia">Amelia</text>
+      <text x="24" y="56" class="sub" data-i18n="senior-software-engineer">Senior Software Engineer</text>
+      <text x="24" y="74" class="sub mono" data-i18n="bmad-agent-dev">bmad-agent-dev</text>
+      <path class="edge soft tone" d="M200 14 V160"/>
+
+      <rect class="code-chip" x="216" y="15" width="40" height="22" rx="2"/>
+      <text x="236" y="30" font-size="12" font-weight="700" text-anchor="middle" class="mono" data-i18n="code-bd">BD</text>
+      <text x="376" y="31" font-size="12" font-weight="700" class="mono" data-i18n="bmad-build">bmad-build</text>
+      <text x="610" y="31" class="sub" data-i18n="implement-a-feature-fix-or-story">implement a feature, fix or story</text>
+
+      <rect class="code-chip" x="216" y="45" width="40" height="22" rx="2"/>
+      <text x="236" y="60" font-size="12" font-weight="700" text-anchor="middle" class="mono" data-i18n="code-qa">QA</text>
+      <text x="376" y="61" font-size="12" font-weight="700" class="mono" data-i18n="bmad-qa-generate-e2e-tests">bmad-qa-generate-e2e-tests</text>
+      <text x="610" y="61" class="sub" data-i18n="api-and-e2e-tests">API and E2E tests for existing features</text>
+
+      <rect class="code-chip" x="216" y="75" width="40" height="22" rx="2"/>
+      <text x="236" y="90" font-size="12" font-weight="700" text-anchor="middle" class="mono" data-i18n="code-cr">CR</text>
+      <text x="376" y="91" font-size="12" font-weight="700" class="mono" data-i18n="bmad-code-review">bmad-code-review</text>
+      <text x="610" y="91" class="sub" data-i18n="comprehensive-code-review">code review across several quality facets</text>
+
+      <rect class="code-chip" x="216" y="105" width="40" height="22" rx="2"/>
+      <text x="236" y="120" font-size="12" font-weight="700" text-anchor="middle" class="mono" data-i18n="code-sp">SP</text>
+      <text x="376" y="121" font-size="12" font-weight="700" class="mono" data-i18n="bmad-sprint-planning-dev">bmad-sprint-planning</text>
+      <text x="610" y="121" class="sub" data-i18n="generate-or-update-the-sprint-plan">generate or update the sprint plan</text>
+
+      <rect class="code-chip" x="216" y="135" width="40" height="22" rx="2"/>
+      <text x="236" y="150" font-size="12" font-weight="700" text-anchor="middle" class="mono" data-i18n="code-er">ER</text>
+      <text x="376" y="151" font-size="12" font-weight="700" class="mono" data-i18n="bmad-retrospective">bmad-retrospective</text>
+      <text x="610" y="151" class="sub" data-i18n="epic-retrospective">evidence-based review of a finished epic</text>
+    </g>
+
+    <!-- No agent -->
+    <g transform="translate(20 872)">
+      <rect class="panel" width="900" height="124" rx="2"/>
+      <text class="k panel-title" x="16" y="24" data-i18n="no-agent">No agent: invoke directly</text>
+
+      <rect class="node" x="16" y="38" width="50" height="30" rx="2"/>
+      <text x="41" y="58" font-size="12" font-weight="700" text-anchor="middle" class="mono" data-i18n="bmad">bmad</text>
+      <rect class="node" x="76" y="38" width="128" height="30" rx="2"/>
+      <text x="140" y="58" font-size="12" font-weight="700" text-anchor="middle" class="mono" data-i18n="bmad-forge-idea">bmad-forge-idea</text>
+      <rect class="node" x="214" y="38" width="85" height="30" rx="2"/>
+      <text x="256" y="58" font-size="12" font-weight="700" text-anchor="middle" class="mono" data-i18n="bmad-spec">bmad-spec</text>
+      <rect class="node" x="309" y="38" width="128" height="30" rx="2"/>
+      <text x="373" y="58" font-size="12" font-weight="700" text-anchor="middle" class="mono" data-i18n="bmad-build-auto">bmad-build-auto</text>
+      <rect class="node" x="447" y="38" width="135" height="30" rx="2"/>
+      <text x="514" y="58" font-size="12" font-weight="700" text-anchor="middle" class="mono" data-i18n="bmad-walkthrough">bmad-walkthrough</text>
+      <rect class="node" x="592" y="38" width="100" height="30" rx="2"/>
+      <text x="642" y="58" font-size="12" font-weight="700" text-anchor="middle" class="mono" data-i18n="bmad-review">bmad-review</text>
+      <rect class="node" x="702" y="38" width="128" height="30" rx="2"/>
+      <text x="766" y="58" font-size="12" font-weight="700" text-anchor="middle" class="mono" data-i18n="bmad-party-mode">bmad-party-mode</text>
+      <rect class="node" x="16" y="78" width="200" height="30" rx="2"/>
+      <text x="116" y="98" font-size="12" font-weight="700" text-anchor="middle" class="mono" data-i18n="bmad-advanced-elicitation">bmad-advanced-elicitation</text>
+      <rect class="node" x="226" y="78" width="121" height="30" rx="2"/>
+      <text x="286" y="98" font-size="12" font-weight="700" text-anchor="middle" class="mono" data-i18n="bmad-customize">bmad-customize</text>
+
+      <text x="366" y="90" class="sub" data-i18n="agents-are-optional">Agents are optional: every skill also runs on its own.</text>
+      <text x="366" y="106" class="sub" data-i18n="codes-are-scoped">Codes are scoped to their agent: CR is a teardown for Mary, a code review for Amelia.</text>
+    </g>
+  </g>
+</svg>

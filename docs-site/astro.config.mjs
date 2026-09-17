@@ -118,7 +118,6 @@ export default defineConfig({
     }),
     starlight({
       title: 'BMad Method',
-      tagline: 'AI-driven agile development with specialized agents and workflows that scale from bug fixes to enterprise platforms.',
 
       // i18n: locale config from shared module (docs-site/src/lib/locales.mjs)
       defaultLocale: 'root',
@@ -268,6 +267,68 @@ export default defineConfig({
                 'cs-CZ': 'Autonomní vývojové smyčky',
               },
               slug: 'build/autonomous-development-loops',
+            },
+          ],
+        },
+        {
+          label: 'Agents',
+          translations: { 'ko-KR': '에이전트', 'vi-VN': 'Agent', 'zh-CN': '智能体', 'fr-FR': 'Agents', 'cs-CZ': 'Agenti' },
+          collapsed: false,
+          items: [
+            {
+              label: 'Mary, Analyst',
+              translations: {
+                'ko-KR': 'Mary, 분석가',
+                'vi-VN': 'Mary, Nhà phân tích',
+                'zh-CN': 'Mary，分析师',
+                'fr-FR': 'Mary, Analyste',
+                'cs-CZ': 'Mary, Analytička',
+              },
+              slug: 'agents/analyst',
+            },
+            {
+              label: 'John, Product Manager',
+              translations: {
+                'ko-KR': 'John, 제품 관리자',
+                'vi-VN': 'John, Quản lý sản phẩm',
+                'zh-CN': 'John，产品经理',
+                'fr-FR': 'John, Chef de produit',
+                'cs-CZ': 'John, Produktový manažer',
+              },
+              slug: 'agents/product-manager',
+            },
+            {
+              label: 'Sally, UX Designer',
+              translations: {
+                'ko-KR': 'Sally, UX 디자이너',
+                'vi-VN': 'Sally, Nhà thiết kế UX',
+                'zh-CN': 'Sally，UX 设计师',
+                'fr-FR': 'Sally, Designer UX',
+                'cs-CZ': 'Sally, UX designérka',
+              },
+              slug: 'agents/ux-designer',
+            },
+            {
+              label: 'Winston, Architect',
+              translations: {
+                'ko-KR': 'Winston, 아키텍트',
+                'vi-VN': 'Winston, Kiến trúc sư',
+                'zh-CN': 'Winston，架构师',
+                'fr-FR': 'Winston, Architecte',
+                'cs-CZ': 'Winston, Architekt',
+              },
+              slug: 'agents/architect',
+            },
+            {
+              label: 'Amelia, Developer',
+              translations: {
+                'ko-KR': 'Amelia, 개발자',
+                'vi-VN': 'Amelia, Lập trình viên',
+                'zh-CN': 'Amelia，开发者',
+                'fr-FR': 'Amelia, Développeuse',
+                'cs-CZ': 'Amelia, Vývojářka',
+              },
+              slug: 'agents/developer',
             },
           ],
         },

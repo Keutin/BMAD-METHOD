@@ -413,6 +413,98 @@ starlight-toc h2,
   stroke: var(--dg-accent);
 }
 
+/* Agent ownership. A step on an agent's menu takes that agent's hue: a tint
+   for the box, the full tone for its edge and initial badge. The hues follow
+   the legend of the original BMad workflow drawing. The agent class goes on a
+   group, so a node and its badge share one tone. */
+.bmad-diagram {
+  --dg-analyst: #00838f;
+  --dg-analyst-tint: #e0f7fa;
+  --dg-pm: #2e7d32;
+  --dg-pm-tint: #e8f5e9;
+  --dg-ux: #8e24aa;
+  --dg-ux-tint: #f3e5f5;
+  --dg-architect: #bf360c;
+  --dg-architect-tint: #fbe9e7;
+  --dg-dev: #3f51b5;
+  --dg-dev-tint: #e8eaf6;
+  --dg-badge-ink: #ffffff;
+}
+
+:root[data-theme='dark'] .bmad-diagram {
+  --dg-analyst: #4dd0e1;
+  --dg-analyst-tint: rgba(77, 208, 225, 0.12);
+  --dg-pm: #81c784;
+  --dg-pm-tint: rgba(129, 199, 132, 0.12);
+  --dg-ux: #ce93d8;
+  --dg-ux-tint: rgba(206, 147, 216, 0.12);
+  --dg-architect: #ff8a65;
+  --dg-architect-tint: rgba(255, 138, 101, 0.12);
+  --dg-dev: #9fa8da;
+  --dg-dev-tint: rgba(159, 168, 218, 0.12);
+  --dg-badge-ink: var(--bmad-dark);
+}
+
+.bmad-diagram .agent-analyst {
+  --dg-tone: var(--dg-analyst);
+  --dg-tone-tint: var(--dg-analyst-tint);
+}
+
+.bmad-diagram .agent-pm {
+  --dg-tone: var(--dg-pm);
+  --dg-tone-tint: var(--dg-pm-tint);
+}
+
+.bmad-diagram .agent-ux {
+  --dg-tone: var(--dg-ux);
+  --dg-tone-tint: var(--dg-ux-tint);
+}
+
+.bmad-diagram .agent-architect {
+  --dg-tone: var(--dg-architect);
+  --dg-tone-tint: var(--dg-architect-tint);
+}
+
+.bmad-diagram .agent-dev {
+  --dg-tone: var(--dg-dev);
+  --dg-tone-tint: var(--dg-dev-tint);
+}
+
+.bmad-diagram .node.tone {
+  fill: var(--dg-tone-tint, var(--dg-surface));
+  stroke: var(--dg-tone, var(--dg-line));
+}
+
+.bmad-diagram .node.hot.tone {
+  stroke-width: 2;
+}
+
+.bmad-diagram .swatch {
+  fill: var(--dg-tone, var(--dg-muted));
+}
+
+.bmad-diagram .edge.tone {
+  stroke: var(--dg-tone, var(--dg-edge));
+}
+
+/* a skill named inside a shared box, where a badge has no room */
+.bmad-diagram text.tone {
+  fill: var(--dg-tone, var(--dg-ink));
+}
+
+.bmad-diagram .code-chip {
+  fill: var(--dg-ground);
+  stroke: var(--dg-tone, var(--dg-line));
+  stroke-width: 1;
+}
+
+.bmad-diagram text.badge {
+  fill: var(--dg-badge-ink);
+  font-size: 10.5px;
+  font-weight: 700;
+  text-anchor: middle;
+}
+
 .bmad-diagram .gate {
   fill: var(--dg-ground);
   stroke: var(--dg-accent);
@@ -776,7 +868,7 @@ site-search button kbd {
   border-inline-end-color: var(--sl-color-hairline);
 }
 
-starlight-menu-button button {
+.sl-menu-button {
   border-radius: 2px;
   box-shadow: none;
   border: 1px solid var(--sl-color-hairline);

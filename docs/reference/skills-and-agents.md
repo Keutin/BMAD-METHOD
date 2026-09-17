@@ -47,13 +47,15 @@ Open your skills directory to see every installed skill with its description. Ru
 
 The BMad Method module installs five named agents. Load one with its skill ID, then type a code from its menu. Codes are scoped to the agent that shows them: `CR` is a competitive teardown for the Analyst and a code review for the Developer.
 
-| Agent                  | Skill ID                 | Codes                                                      | Menu                                                                                                                                                                 |
-| ---------------------- | ------------------------ | ---------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Analyst (Mary)         | `bmad-agent-analyst`     | `BP`, `MR`, `DR`, `TR`, `TS`, `CR`, `UV`, `CB`, `WB`, `PC` | Brainstorm; market, domain, and technical research; technology selection; competitive teardown; user-voice research; product brief; PRFAQ challenge; project context |
-| Product Manager (John) | `bmad-agent-pm`          | `PRD`, `CE`, `IR`, `CC`                                    | Create, update, or validate a PRD; epics and stories; implementation readiness; correct course                                                                       |
-| Architect (Winston)    | `bmad-agent-architect`   | `CA`, `IR`                                                 | Architecture spine; implementation readiness                                                                                                                         |
-| Developer (Amelia)     | `bmad-agent-dev`         | `BD`, `QA`, `CR`, `SP`, `ER`                               | Build; QA test generation; code review; sprint plan; epic retrospective                                                                                              |
-| UX Designer (Sally)    | `bmad-agent-ux-designer` | `CU`                                                       | UX design                                                                                                                                                            |
+![The five agents with their colours and menu codes: Mary, Analyst, runs brainstorming, deep recon, product brief, PRFAQ and project context; John, Product Manager, runs the PRD, epics and stories, the readiness gate and correct course; Sally, UX Designer, runs UX design; Winston, Architect, runs architecture and the readiness gate; Amelia, Developer, runs build, QA tests, code review, sprint planning and the retrospective; the remaining skills have no agent](/diagrams/bmad-agents.svg)
+
+| Agent                                                  | Skill ID                 | Codes                                                      | Menu                                                                                                                                                                 |
+| ------------------------------------------------------ | ------------------------ | ---------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Analyst (Mary)](../agents/analyst.md)                 | `bmad-agent-analyst`     | `BP`, `MR`, `DR`, `TR`, `TS`, `CR`, `UV`, `CB`, `WB`, `PC` | Brainstorm; market, domain, and technical research; technology selection; competitive teardown; user-voice research; product brief; PRFAQ challenge; project context |
+| [Product Manager (John)](../agents/product-manager.md) | `bmad-agent-pm`          | `PRD`, `CE`, `IR`, `CC`                                    | Create, update, or validate a PRD; epics and stories; implementation readiness; correct course                                                                       |
+| [Architect (Winston)](../agents/architect.md)          | `bmad-agent-architect`   | `CA`, `IR`                                                 | Architecture spine; implementation readiness                                                                                                                         |
+| [Developer (Amelia)](../agents/developer.md)           | `bmad-agent-dev`         | `BD`, `QA`, `CR`, `SP`, `ER`                               | Build; QA test generation; code review; sprint plan; epic retrospective                                                                                              |
+| [UX Designer (Sally)](../agents/ux-designer.md)        | `bmad-agent-ux-designer` | `CU`                                                       | UX design                                                                                                                                                            |
 
 :::note[Where is Paige?]
 The Technical Writer (Paige) is on hiatus. Project context lives on: use the Analyst's `PC` code or invoke `bmad-project-context` directly.
@@ -62,6 +64,8 @@ The Technical Writer (Paige) is on hiatus. Project context lives on: use the Ana
 The Developer's `QA` code runs `bmad-qa-generate-e2e-tests`; the full Test Architect is a separate module. See [Test Completed Work](../build/test-completed-work.md).
 
 Each agent is an identity plus a customizable layer. See [Customize BMad](../customize/customize-bmad.md) for how that model works and how to change an agent.
+
+Each agent has its own page with its persona, menu and a diagram of what every code reads and writes: [Mary](../agents/analyst.md), [John](../agents/product-manager.md), [Sally](../agents/ux-designer.md), [Winston](../agents/architect.md) and [Amelia](../agents/developer.md).
 
 ## Core Skills
 
@@ -167,9 +171,15 @@ The BMad Method module adds the five agents above and these workflow skills. The
 | `bmad-build`                    | Turn a work item into working code, reviewed and verified                                         | [Build a Change](../build/build-a-change.md)                                                           |
 | `bmad-build-auto`               | Run one iteration of an unattended development loop                                               | [Autonomous Development Loops](../build/autonomous-development-loops.md)                               |
 | `bmad-code-review`              | Review code changes with several independent reviewers, then triage the findings                  | [Review a Change](../build/review-a-change.md)                                                         |
-| `bmad-walkthrough`              | Walk you through reviewing a change: what to look at and how to test it                           | [Walk Through a Change](../build/walk-through-a-change.md)                                             |
+| `bmad-walkthrough`              | Guide a human review of a commit, PR, file, or directory, one block at a time                      | [Walk Through a Change](../build/walk-through-a-change.md)                                             |
 | `bmad-qa-generate-e2e-tests`    | Generate automated API and end-to-end tests for implemented features                              | [Test Completed Work](../build/test-completed-work.md)                                                 |
 | `bmad-retrospective`            | Review a completed epic against its evidence and decide whether to accept it                      | [Finish an Epic](../build/finish-an-epic.md)                                                           |
+
+## Where Files Land
+
+Skills write into the output folders set in `_bmad/config.toml`: `_bmad-output/` for runs and specs, `planning-artifacts/` for plans, and `implementation-artifacts/` for Build records, sprint status and retrospectives. The colours match the agent that runs each skill. The [Glossary](./glossary.md) decodes the IDs, statuses and sections inside these files.
+
+![The folder hierarchy of a project using BMad, each file coloured by the agent that writes it, next to the top-level sections of the key files: AGENTS.md, brief, PRD, DESIGN.md and EXPERIENCE.md, ARCHITECTURE-SPINE.md, epics.md, sprint-status.yaml, SPEC.md with stories.yaml, the Build story file and the epic retrospective](/diagrams/bmad-files.svg)
 
 ## Deprecated Names
 

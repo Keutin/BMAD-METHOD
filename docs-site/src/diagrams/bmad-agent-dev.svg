@@ -1,0 +1,142 @@
+<svg class="bmad-diagram" xmlns="http://www.w3.org/2000/svg" width="940" height="744" viewBox="0 0 940 744" role="img" aria-labelledby="ad-title ad-desc">
+  <title id="ad-title">Amelia, Senior Software Engineer: what each menu skill reads, writes and hands on</title>
+  <desc id="ad-desc">Amelia, Senior Software Engineer, bmad-agent-dev. SP bmad-sprint-planning reads plan/epics.md, after a PASS gate; writes impl/sprint-status.yaml; next BD build. BD bmad-build reads story or request, epics, planning docs (optional), sprint-status.yaml (optional); writes impl/spec-{slug}.md impl/epic-{N}-context.md impl/deferred-work.md code · status: review; next CR code review, QA tests. QA bmad-qa-generate-e2e-tests reads a built feature; writes tests/api/ · tests/e2e/ impl/tests/ test-summary.md; next CR code review. CR bmad-code-review reads the diff, story file (optional), sprint-status.yaml (optional); writes findings in the story impl/deferred-work.md status: done; next BD next story, ER epic done. ER bmad-retrospective reads epic stories, diff, sprint-status.yaml, previous retro (optional); writes impl/epic-{N}- retro-{date}.md action items; next SP next epic, CC correct course.</desc>
+  <defs>
+    <marker id="ad-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path class="head" d="M 0 0 L 10 5 L 0 10 z"/>
+    </marker>
+  </defs>
+
+  <g fill="var(--dg-ink)">
+    <text x="470" y="40" font-size="20" font-weight="700" text-anchor="middle" letter-spacing="1" data-i18n="heading">AMELIA, SENIOR SOFTWARE ENGINEER</text>
+    <text x="470" y="64" font-size="14" text-anchor="middle" data-i18n="subtitle">Runs the implementation loop: plan the sprint, build each story, review, close the epic.</text>
+    <g class="agent-dev" transform="translate(20 88)">
+      <rect class="node tone" width="900" height="44" rx="2"/>
+      <rect class="swatch" width="6" height="44"/>
+      <circle class="swatch" cx="34" cy="22" r="9"/>
+      <text class="badge" x="34" y="26">A</text>
+      <text x="52" y="27" font-size="16" font-weight="700" data-i18n="name">Amelia</text>
+      <text x="128" y="27" class="sub" data-i18n="title">Senior Software Engineer</text>
+      <text x="888" y="27" class="sub mono" text-anchor="end" data-i18n="skill-id">bmad-agent-dev</text>
+    </g>
+    <text x="22" y="160" class="k" data-i18n="col-reads">READS</text>
+    <text x="218" y="160" class="k" data-i18n="col-skill">SKILL</text>
+    <text x="484" y="160" class="k" data-i18n="col-writes">WRITES</text>
+    <text x="780" y="160" class="k" data-i18n="col-next">NEXT</text>
+    <!-- SP bmad-sprint-planning -->
+    <g class="agent-dev">
+      <rect class="node" x="20" y="172" width="170" height="84" rx="2"/>
+      <text x="32" y="209.0" class="mono" font-size="12" data-i18n="sp-reads-plan-epics-md">plan/epics.md</text>
+      <text x="32" y="227.0" font-size="12" data-i18n="sp-reads-after-a-pass-gate">after a PASS gate</text>
+      <rect class="node hot tone" x="216" y="172" width="240" height="84" rx="2"/>
+      <rect class="code-chip" x="228" y="183.0" width="32" height="22" rx="2"/>
+      <text x="244.0" y="198.0" class="mono" font-size="12" font-weight="700" text-anchor="middle" data-i18n="code-sp-sp">SP</text>
+      <text x="228" y="225.0" class="mono" font-size="12" font-weight="700" data-i18n="sp-skill-bmad-sprint-planning">bmad-sprint-planning</text>
+      <text x="228" y="243.0" class="sub" data-i18n="sp-purpose">generate the sprint plan</text>
+      <rect class="node tone" x="482" y="172" width="270" height="84" rx="2"/>
+      <text x="494" y="218.0" class="mono" font-size="12" data-i18n="sp-writes-impl-sprint-status-yaml">impl/sprint-status.yaml</text>
+      <rect class="node" x="778" y="172" width="142" height="84" rx="2"/>
+      <g class="agent-dev"><circle class="swatch" cx="798" cy="214.0" r="8"/><text class="badge" x="798" y="217.5">A</text></g>
+      <text x="812" y="218.0" font-size="12" data-i18n="sp-next-bd-build">BD build</text>
+      <path class="edge" d="M190 214.0 H214" marker-end="url(#ad-arrow)"/>
+      <path class="edge" d="M456 214.0 H480" marker-end="url(#ad-arrow)"/>
+      <path class="edge" d="M752 214.0 H776" marker-end="url(#ad-arrow)"/>
+    </g>
+    <!-- BD bmad-build -->
+    <g class="agent-dev">
+      <rect class="node" x="20" y="270" width="170" height="100" rx="2"/>
+      <text x="32" y="306.0" font-size="12" data-i18n="bd-reads-story-or-request">story or request</text>
+      <text x="32" y="324.0" class="sub" data-i18n="bd-reads-epics-planning-docs">epics, planning docs</text>
+      <text x="32" y="342.0" class="sub" data-i18n="bd-reads-sprint-status-yaml">sprint-status.yaml</text>
+      <rect class="node hot tone" x="216" y="270" width="240" height="100" rx="2"/>
+      <rect class="code-chip" x="228" y="289.0" width="32" height="22" rx="2"/>
+      <text x="244.0" y="304.0" class="mono" font-size="12" font-weight="700" text-anchor="middle" data-i18n="code-bd-bd">BD</text>
+      <text x="228" y="331.0" class="mono" font-size="12" font-weight="700" data-i18n="bd-skill-bmad-build">bmad-build</text>
+      <text x="228" y="349.0" class="sub" data-i18n="bd-purpose">feature, fix or story</text>
+      <rect class="node tone" x="482" y="270" width="270" height="100" rx="2"/>
+      <text x="494" y="297.0" class="mono" font-size="12" data-i18n="bd-writes-impl-spec-slug-md">impl/spec-{slug}.md</text>
+      <text x="494" y="315.0" class="sub mono" data-i18n="bd-writes-impl-epic-n-context-md">impl/epic-{N}-context.md</text>
+      <text x="494" y="333.0" class="sub mono" data-i18n="bd-writes-impl-deferred-work-md">impl/deferred-work.md</text>
+      <text x="494" y="351.0" font-size="12" data-i18n="bd-writes-code-status-review">code · status: review</text>
+      <rect class="node" x="778" y="270" width="142" height="100" rx="2"/>
+      <g class="agent-dev"><circle class="swatch" cx="798" cy="308.0" r="8"/><text class="badge" x="798" y="311.5">A</text></g>
+      <text x="812" y="312.0" font-size="12" data-i18n="bd-next-cr-code-review">CR code review</text>
+      <g class="agent-dev"><circle class="swatch" cx="798" cy="332.0" r="8"/><text class="badge" x="798" y="335.5">A</text></g>
+      <text x="812" y="336.0" font-size="12" data-i18n="bd-next-qa-tests">QA tests</text>
+      <path class="edge" d="M190 320.0 H214" marker-end="url(#ad-arrow)"/>
+      <path class="edge" d="M456 320.0 H480" marker-end="url(#ad-arrow)"/>
+      <path class="edge" d="M752 320.0 H776" marker-end="url(#ad-arrow)"/>
+    </g>
+    <!-- QA bmad-qa-generate-e2e-tests -->
+    <g class="agent-dev">
+      <rect class="node" x="20" y="384" width="170" height="84" rx="2"/>
+      <text x="32" y="430.0" font-size="12" data-i18n="qa-reads-a-built-feature">a built feature</text>
+      <rect class="node hot tone" x="216" y="384" width="240" height="84" rx="2"/>
+      <rect class="code-chip" x="228" y="395.0" width="32" height="22" rx="2"/>
+      <text x="244.0" y="410.0" class="mono" font-size="12" font-weight="700" text-anchor="middle" data-i18n="code-qa-qa">QA</text>
+      <text x="228" y="437.0" class="mono" font-size="12" font-weight="700" data-i18n="qa-skill-bmad-qa-generate-e2e-tests">bmad-qa-generate-e2e-tests</text>
+      <text x="228" y="455.0" class="sub" data-i18n="qa-purpose">API and E2E tests</text>
+      <rect class="node tone" x="482" y="384" width="270" height="84" rx="2"/>
+      <text x="494" y="412.0" class="mono" font-size="12" data-i18n="qa-writes-tests-api-tests-e2e">tests/api/ · tests/e2e/</text>
+      <text x="494" y="430.0" class="mono" font-size="12" data-i18n="qa-writes-impl-tests">impl/tests/</text>
+      <text x="506" y="448.0" class="mono" font-size="12" data-i18n="qa-writes-test-summary-md">test-summary.md</text>
+      <rect class="node" x="778" y="384" width="142" height="84" rx="2"/>
+      <g class="agent-dev"><circle class="swatch" cx="798" cy="426.0" r="8"/><text class="badge" x="798" y="429.5">A</text></g>
+      <text x="812" y="430.0" font-size="12" data-i18n="qa-next-cr-code-review">CR code review</text>
+      <path class="edge" d="M190 426.0 H214" marker-end="url(#ad-arrow)"/>
+      <path class="edge" d="M456 426.0 H480" marker-end="url(#ad-arrow)"/>
+      <path class="edge" d="M752 426.0 H776" marker-end="url(#ad-arrow)"/>
+    </g>
+    <!-- CR bmad-code-review -->
+    <g class="agent-dev">
+      <rect class="node" x="20" y="482" width="170" height="84" rx="2"/>
+      <text x="32" y="510.0" font-size="12" data-i18n="cr-reads-the-diff">the diff</text>
+      <text x="32" y="528.0" class="sub" data-i18n="cr-reads-story-file">story file</text>
+      <text x="32" y="546.0" class="sub" data-i18n="cr-reads-sprint-status-yaml">sprint-status.yaml</text>
+      <rect class="node hot tone" x="216" y="482" width="240" height="84" rx="2"/>
+      <rect class="code-chip" x="228" y="493.0" width="32" height="22" rx="2"/>
+      <text x="244.0" y="508.0" class="mono" font-size="12" font-weight="700" text-anchor="middle" data-i18n="code-cr-cr">CR</text>
+      <text x="228" y="535.0" class="mono" font-size="12" font-weight="700" data-i18n="cr-skill-bmad-code-review">bmad-code-review</text>
+      <text x="228" y="553.0" class="sub" data-i18n="cr-purpose">independent reviewers</text>
+      <rect class="node tone" x="482" y="482" width="270" height="84" rx="2"/>
+      <text x="494" y="510.0" font-size="12" data-i18n="cr-writes-findings-in-the-story">findings in the story</text>
+      <text x="494" y="528.0" class="sub mono" data-i18n="cr-writes-impl-deferred-work-md">impl/deferred-work.md</text>
+      <text x="494" y="546.0" font-size="12" data-i18n="cr-writes-status-done">status: done</text>
+      <rect class="node" x="778" y="482" width="142" height="84" rx="2"/>
+      <g class="agent-dev"><circle class="swatch" cx="798" cy="512.0" r="8"/><text class="badge" x="798" y="515.5">A</text></g>
+      <text x="812" y="516.0" font-size="12" data-i18n="cr-next-bd-next-story">BD next story</text>
+      <g class="agent-dev"><circle class="swatch" cx="798" cy="536.0" r="8"/><text class="badge" x="798" y="539.5">A</text></g>
+      <text x="812" y="540.0" font-size="12" data-i18n="cr-next-er-epic-done">ER epic done</text>
+      <path class="edge" d="M190 524.0 H214" marker-end="url(#ad-arrow)"/>
+      <path class="edge" d="M456 524.0 H480" marker-end="url(#ad-arrow)"/>
+      <path class="edge" d="M752 524.0 H776" marker-end="url(#ad-arrow)"/>
+    </g>
+    <!-- ER bmad-retrospective -->
+    <g class="agent-dev">
+      <rect class="node" x="20" y="580" width="170" height="84" rx="2"/>
+      <text x="32" y="608.0" font-size="12" data-i18n="er-reads-epic-stories-diff">epic stories, diff</text>
+      <text x="32" y="626.0" font-size="12" data-i18n="er-reads-sprint-status-yaml">sprint-status.yaml</text>
+      <text x="32" y="644.0" class="sub" data-i18n="er-reads-previous-retro">previous retro</text>
+      <rect class="node hot tone" x="216" y="580" width="240" height="84" rx="2"/>
+      <rect class="code-chip" x="228" y="591.0" width="32" height="22" rx="2"/>
+      <text x="244.0" y="606.0" class="mono" font-size="12" font-weight="700" text-anchor="middle" data-i18n="code-er-er">ER</text>
+      <text x="228" y="633.0" class="mono" font-size="12" font-weight="700" data-i18n="er-skill-bmad-retrospective">bmad-retrospective</text>
+      <text x="228" y="651.0" class="sub" data-i18n="er-purpose">review a finished epic</text>
+      <rect class="node tone" x="482" y="580" width="270" height="84" rx="2"/>
+      <text x="494" y="608.0" class="mono" font-size="12" data-i18n="er-writes-impl-epic-n">impl/epic-{N}-</text>
+      <text x="506" y="626.0" class="mono" font-size="12" data-i18n="er-writes-retro-date-md">retro-{date}.md</text>
+      <text x="494" y="644.0" font-size="12" data-i18n="er-writes-action-items">action items</text>
+      <rect class="node" x="778" y="580" width="142" height="84" rx="2"/>
+      <g class="agent-dev"><circle class="swatch" cx="798" cy="610.0" r="8"/><text class="badge" x="798" y="613.5">A</text></g>
+      <text x="812" y="614.0" font-size="12" data-i18n="er-next-sp-next-epic">SP next epic</text>
+      <g class="agent-pm"><circle class="swatch" cx="798" cy="634.0" r="8"/><text class="badge" x="798" y="637.5">J</text></g>
+      <text x="812" y="638.0" font-size="12" data-i18n="er-next-cc-correct-course">CC correct course</text>
+      <path class="edge" d="M190 622.0 H214" marker-end="url(#ad-arrow)"/>
+      <path class="edge" d="M456 622.0 H480" marker-end="url(#ad-arrow)"/>
+      <path class="edge" d="M752 622.0 H776" marker-end="url(#ad-arrow)"/>
+    </g>
+    <path class="edge lens" d="M20 686 H920"/>
+    <text x="20" y="708" class="sub" data-i18n="legend-optional">Grey lines are optional or conditional; a dashed arrow means every input is optional.</text>
+    <text x="20" y="726" class="sub mono" data-i18n="legend-paths">plan/ = _bmad-output/planning-artifacts/   impl/ = _bmad-output/implementation-artifacts/   out/ = _bmad-output/</text>
+  </g>
+</svg>

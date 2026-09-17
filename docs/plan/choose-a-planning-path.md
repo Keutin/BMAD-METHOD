@@ -155,6 +155,8 @@ track the stories with
 [Break Work into Stories and Track It](./break-work-into-stories-and-track-it.md),
 and close each epic with [Finish an Epic](../build/finish-an-epic.md).
 
+![Four phases left to right: analysis (brainstorming, forge idea, deep recon, brief or PRFAQ), planning (PRD, then UX when there is a UI), solutioning (architecture, epics and stories, sprint planning with its readiness gate), and implementation (spec per epic, Build per story with its review layers, retrospective, more epics or done), with core skills available at any step](/diagrams/bmad-workflow-greenfield.svg)
+
 These documents coordinate implementation. They do not replace Build. Each
 epic still becomes a sequence of one-session units. Independent epic streams
 can proceed in parallel when their boundaries are explicit. Each stream needs

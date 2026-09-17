@@ -45,10 +45,14 @@ Consider running `bmad-project-context`, then build as usual. See
 [Start in an Existing Codebase](./existing-codebases/start-in-an-existing-codebase.md) and
 [Set and Maintain Project Context](./existing-codebases/set-and-maintain-project-context.md).
 
+![Start from the existing codebase, run bmad-project-context when AGENTS.md is missing or stale, then size the change: one session goes straight to bmad-build, an epic runs bmad-spec then Build per story and a retrospective, and a project runs PRD, UX when screens change, architecture that ratifies the existing conventions, epics and stories, sprint planning, then the epic path once per epic; core skills available at any step](/diagrams/bmad-workflow-brownfield.svg)
+
 **You are building a larger feature or a whole product.**
 If you can give `bmad-spec` a complete intent, start there. If you need to
 go through the ideation/planning paces first, choose a path in
 [Choose a Planning Path](./plan/choose-a-planning-path.md).
+
+![Four phases left to right: analysis (brainstorming, forge idea, deep recon, brief or PRFAQ), planning (PRD, then UX when there is a UI), solutioning (architecture, epics and stories, sprint planning with its readiness gate), and implementation (spec per epic, Build per story with its review layers, retrospective, more epics or done), with core skills available at any step](/diagrams/bmad-workflow-greenfield.svg)
 
 **Your idea is still vague, or you are not sure it is a good one.**
 Generate options or [pressure-test the idea](./plan/explore-and-validate-an-idea.md),
