@@ -63,6 +63,13 @@
     "bmad-advanced-elicitation": "bmad-advanced-elicitation",
     "bmad-correct-course": "bmad-correct-course",
     "help-context-review-party-elicitation": "Help, project context, review, party mode and elicitation fit anywhere.",
-    "correct-course-mid-sprint-change": "Correct course handles a significant mid-sprint change: update the PRD, architecture or epics, then re-run sprint planning."
+    "correct-course-mid-sprint-change": "Correct course handles a significant mid-sprint change: update the PRD, architecture or epics, then re-run sprint planning.",
+    "legend-agent-colours": "Agent colours",
+    "legend-mary": "Mary, Analyst",
+    "legend-john": "John, PM",
+    "legend-sally": "Sally, UX",
+    "legend-winston": "Winston, Architect",
+    "legend-amelia": "Amelia, Developer",
+    "legend-no-agent": "no agent"
   }
 }

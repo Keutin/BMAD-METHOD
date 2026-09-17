@@ -1,6 +1,6 @@
-<svg class="bmad-diagram" xmlns="http://www.w3.org/2000/svg" width="940" height="950" viewBox="0 0 940 950" role="img" aria-labelledby="wg-title wg-desc">
+<svg class="bmad-diagram" xmlns="http://www.w3.org/2000/svg" width="940" height="990" viewBox="0 0 940 990" role="img" aria-labelledby="wg-title wg-desc">
   <title id="wg-title">BMad Method workflow for a project-sized greenfield build</title>
-  <desc id="wg-desc">Four phases left to right. Analysis, optional and in any order: bmad-brainstorming, bmad-forge-idea, bmad-deep-recon, bmad-product-brief, bmad-prfaq. Planning, the shared contracts: bmad-prd, then bmad-ux when there is a UI; work that needs no PRD goes straight to solutioning. Solutioning: bmad-architecture, bmad-create-epics-and-stories, bmad-sprint-planning with its PASS, CONCERNS or FAIL readiness gate. Implementation, one Build session per story: bmad-spec once per epic, bmad-build with its built-in review lenses, optional bmad-code-review, bmad-walkthrough and bmad-qa-generate-e2e-tests, then more stories or bmad-retrospective, then more epics or done. Available at any step: bmad, bmad-project-context, bmad-review, bmad-party-mode, bmad-advanced-elicitation, and bmad-correct-course for a significant mid-sprint change.</desc>
+  <desc id="wg-desc">Four phases left to right. Analysis, optional and in any order: bmad-brainstorming, bmad-forge-idea, bmad-deep-recon, bmad-product-brief, bmad-prfaq. Planning, the shared contracts: bmad-prd, then bmad-ux when there is a UI; work that needs no PRD goes straight to solutioning. Solutioning: bmad-architecture, bmad-create-epics-and-stories, bmad-sprint-planning with its PASS, CONCERNS or FAIL readiness gate. Implementation, one Build session per story: bmad-spec once per epic, bmad-build with its built-in review lenses, optional bmad-code-review, bmad-walkthrough and bmad-qa-generate-e2e-tests, then more stories or bmad-retrospective, then more epics or done. Available at any step: bmad, bmad-project-context, bmad-review, bmad-party-mode, bmad-advanced-elicitation, and bmad-correct-course for a significant mid-sprint change. Each step is coloured by the agent whose menu runs it, with its initial as a badge: Mary the Analyst, John the PM, Sally the UX Designer, Winston the Architect and Amelia the Developer; sprint planning is shared by John, Winston and Amelia, and uncoloured steps have no agent.</desc>
   <defs>
     <marker id="wg-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
       <path class="head" d="M 0 0 L 10 5 L 0 10 z"/>
@@ -17,25 +17,33 @@
       <text x="105" y="30" font-size="15" font-weight="700" text-anchor="middle" letter-spacing="1" data-i18n="analysis">ANALYSIS</text>
       <text x="105" y="50" class="sub mid" data-i18n="optional-any-order">optional, in any order</text>
 
-      <g transform="translate(15 66)">
-        <rect class="node" width="180" height="44" rx="2"/>
+      <g class="agent-analyst" transform="translate(15 66)">
+        <rect class="node tone" width="180" height="44" rx="2"/>
         <text x="12" y="27" font-size="13" font-weight="700" class="mono" data-i18n="bmad-brainstorming">bmad-brainstorming</text>
+        <circle class="swatch" cx="164" cy="0" r="9"/>
+        <text class="badge" x="164" y="4">M</text>
       </g>
       <g transform="translate(15 122)">
         <rect class="node" width="180" height="44" rx="2"/>
         <text x="12" y="27" font-size="13" font-weight="700" class="mono" data-i18n="bmad-forge-idea">bmad-forge-idea</text>
       </g>
-      <g transform="translate(15 178)">
-        <rect class="node" width="180" height="44" rx="2"/>
+      <g class="agent-analyst" transform="translate(15 178)">
+        <rect class="node tone" width="180" height="44" rx="2"/>
         <text x="12" y="27" font-size="13" font-weight="700" class="mono" data-i18n="bmad-deep-recon">bmad-deep-recon</text>
+        <circle class="swatch" cx="164" cy="0" r="9"/>
+        <text class="badge" x="164" y="4">M</text>
       </g>
-      <g transform="translate(15 234)">
-        <rect class="node" width="180" height="44" rx="2"/>
+      <g class="agent-analyst" transform="translate(15 234)">
+        <rect class="node tone" width="180" height="44" rx="2"/>
         <text x="12" y="27" font-size="13" font-weight="700" class="mono" data-i18n="bmad-product-brief">bmad-product-brief</text>
+        <circle class="swatch" cx="164" cy="0" r="9"/>
+        <text class="badge" x="164" y="4">M</text>
       </g>
-      <g transform="translate(15 290)">
-        <rect class="node" width="180" height="44" rx="2"/>
+      <g class="agent-analyst" transform="translate(15 290)">
+        <rect class="node tone" width="180" height="44" rx="2"/>
         <text x="12" y="27" font-size="13" font-weight="700" class="mono" data-i18n="bmad-prfaq">bmad-prfaq</text>
+        <circle class="swatch" cx="164" cy="0" r="9"/>
+        <text class="badge" x="164" y="4">M</text>
       </g>
       <text x="105" y="372" class="sub mid" data-i18n="pick-the-ones-the-gap-calls-for">Pick the ones the gap calls for,</text>
       <text x="105" y="390" class="sub mid" data-i18n="until-the-intent-is-well-defined">until the intent is well defined.</text>
@@ -47,11 +55,13 @@
       <text x="105" y="30" font-size="15" font-weight="700" text-anchor="middle" letter-spacing="1" data-i18n="planning">PLANNING</text>
       <text x="105" y="50" class="sub mid" data-i18n="shared-contracts">shared contracts</text>
 
-      <g transform="translate(15 66)">
-        <rect class="node" width="180" height="74" rx="2"/>
+      <g class="agent-pm" transform="translate(15 66)">
+        <rect class="node tone" width="180" height="74" rx="2"/>
         <text x="12" y="23" font-size="13" font-weight="700" class="mono" data-i18n="bmad-prd">bmad-prd</text>
         <text x="12" y="45" class="sub" data-i18n="when-several-people-or-epics">when several people or epics</text>
         <text x="12" y="62" class="sub" data-i18n="must-agree-on-the-product">must agree on the product</text>
+        <circle class="swatch" cx="164" cy="0" r="9"/>
+        <text class="badge" x="164" y="4">J</text>
       </g>
       <path class="edge" d="M105 140 V160" stroke-linecap="round" marker-end="url(#wg-arrow)"/>
       <path class="node gate" d="M105 162 L165 184 L105 206 L45 184 z"/>
@@ -59,10 +69,12 @@
       <path class="edge" d="M105 206 V232" stroke-linecap="round" marker-end="url(#wg-arrow)"/>
       <text class="k" x="112" y="224" data-i18n="edge-yes-ui">yes</text>
       <text class="k" x="170" y="180" data-i18n="edge-no-ui">no: skip</text>
-      <g transform="translate(15 234)">
-        <rect class="node" width="180" height="58" rx="2"/>
+      <g class="agent-ux" transform="translate(15 234)">
+        <rect class="node tone" width="180" height="58" rx="2"/>
         <text x="12" y="23" font-size="13" font-weight="700" class="mono" data-i18n="bmad-ux">bmad-ux</text>
         <text x="12" y="45" class="sub" data-i18n="design-md-experience-md">DESIGN.md, EXPERIENCE.md</text>
+        <circle class="swatch" cx="164" cy="0" r="9"/>
+        <text class="badge" x="164" y="4">S</text>
       </g>
       <text x="105" y="354" class="sub mid" data-i18n="no-prd-needed">No PRD needed? Go straight</text>
       <text x="105" y="372" class="sub mid" data-i18n="to-solutioning">to solutioning. A multi-epic</text>
@@ -75,17 +87,21 @@
       <text x="105" y="30" font-size="15" font-weight="700" text-anchor="middle" letter-spacing="1" data-i18n="solutioning">SOLUTIONING</text>
       <text x="105" y="50" class="sub mid" data-i18n="decide-how-divide-the-work">decide how, divide the work</text>
 
-      <g transform="translate(15 66)">
-        <rect class="node" width="180" height="58" rx="2"/>
+      <g class="agent-architect" transform="translate(15 66)">
+        <rect class="node tone" width="180" height="58" rx="2"/>
         <text x="12" y="23" font-size="13" font-weight="700" class="mono" data-i18n="bmad-architecture">bmad-architecture</text>
         <text x="12" y="45" class="sub" data-i18n="architecture-spine-md">ARCHITECTURE-SPINE.md</text>
+        <circle class="swatch" cx="164" cy="0" r="9"/>
+        <text class="badge" x="164" y="4">W</text>
       </g>
       <path class="edge" d="M105 124 V148" stroke-linecap="round" marker-end="url(#wg-arrow)"/>
-      <g transform="translate(15 150)">
-        <rect class="node" width="180" height="74" rx="2"/>
+      <g class="agent-pm" transform="translate(15 150)">
+        <rect class="node tone" width="180" height="74" rx="2"/>
         <text x="12" y="23" font-size="12" font-weight="700" class="mono" data-i18n="bmad-create-epics">bmad-create-epics-</text>
         <text x="12" y="40" font-size="12" font-weight="700" class="mono" data-i18n="and-stories">and-stories</text>
         <text x="12" y="62" class="sub" data-i18n="epic-files-with-stories">epic files with stories</text>
+        <circle class="swatch" cx="164" cy="0" r="9"/>
+        <text class="badge" x="164" y="4">J</text>
       </g>
       <path class="edge" d="M105 224 V248" stroke-linecap="round" marker-end="url(#wg-arrow)"/>
       <g transform="translate(15 250)">
@@ -94,6 +110,18 @@
         <text x="12" y="45" class="sub" data-i18n="readiness-gate">readiness gate:</text>
         <text x="12" y="62" class="sub" data-i18n="pass-concerns-fail">PASS / CONCERNS / FAIL</text>
         <text x="12" y="79" class="sub" data-i18n="sprint-status-yaml">sprint-status.yaml</text>
+        <g class="agent-pm">
+          <circle class="swatch" cx="124" cy="0" r="9"/>
+          <text class="badge" x="124" y="4">J</text>
+        </g>
+        <g class="agent-architect">
+          <circle class="swatch" cx="144" cy="0" r="9"/>
+          <text class="badge" x="144" y="4">W</text>
+        </g>
+        <g class="agent-dev">
+          <circle class="swatch" cx="164" cy="0" r="9"/>
+          <text class="badge" x="164" y="4">A</text>
+        </g>
       </g>
     </g>
 
@@ -109,19 +137,21 @@
         <text x="12" y="45" class="sub" data-i18n="one-per-epic-spec-md-stories-yaml">one per epic: SPEC.md, stories.yaml</text>
       </g>
       <path class="edge" d="M105 124 V148" stroke-linecap="round" marker-end="url(#wg-arrow)"/>
-      <g transform="translate(15 150)">
-        <rect class="node hot" width="180" height="74" rx="2"/>
+      <g class="agent-dev" transform="translate(15 150)">
+        <rect class="node hot tone" width="180" height="74" rx="2"/>
         <text x="12" y="23" font-size="13" font-weight="700" class="mono" data-i18n="bmad-build">bmad-build</text>
         <text x="12" y="45" class="sub" data-i18n="clarify-plan-implement-review">clarify · plan · implement · review</text>
         <text x="12" y="62" class="sub" data-i18n="bmad-build-auto-unattended">bmad-build-auto: unattended</text>
+        <circle class="swatch" cx="164" cy="0" r="9"/>
+        <text class="badge" x="164" y="4">A</text>
       </g>
       <path class="edge" d="M105 224 V248" stroke-linecap="round" marker-end="url(#wg-arrow)"/>
       <g transform="translate(15 250)">
         <rect class="node" width="180" height="90" rx="2"/>
         <text x="12" y="20" class="k" data-i18n="optional-extras">optional extras</text>
-        <text x="12" y="40" font-size="12" font-weight="700" class="mono" data-i18n="bmad-code-review">bmad-code-review</text>
-        <text x="12" y="58" font-size="12" font-weight="700" class="mono" data-i18n="bmad-walkthrough">bmad-walkthrough</text>
-        <text x="12" y="76" font-size="12" font-weight="700" class="mono" data-i18n="bmad-qa-generate-e2e-tests">bmad-qa-generate-e2e-tests</text>
+        <text x="12" y="40" font-size="11" font-weight="700" class="mono agent-dev tone" data-i18n="bmad-code-review">bmad-code-review</text>
+        <text x="12" y="58" font-size="11" font-weight="700" class="mono" data-i18n="bmad-walkthrough">bmad-walkthrough</text>
+        <text x="12" y="76" font-size="11" font-weight="700" letter-spacing="-0.3" class="mono agent-dev tone" data-i18n="bmad-qa-generate-e2e-tests">bmad-qa-generate-e2e-tests</text>
       </g>
       <path class="edge" d="M105 340 V361" stroke-linecap="round" marker-end="url(#wg-arrow)"/>
       <path class="node gate" d="M105 363 L175 385 L105 407 L35 385 z"/>
@@ -130,10 +160,12 @@
       <text class="k" x="4" y="300" transform="rotate(-90 4 300)" data-i18n="edge-yes-next-story">yes: next story</text>
       <path class="edge" d="M105 407 V438" stroke-linecap="round" marker-end="url(#wg-arrow)"/>
       <text class="k" x="112" y="428" data-i18n="edge-no-stories">no</text>
-      <g transform="translate(15 440)">
-        <rect class="node" width="180" height="58" rx="2"/>
+      <g class="agent-dev" transform="translate(15 440)">
+        <rect class="node tone" width="180" height="58" rx="2"/>
         <text x="12" y="23" font-size="13" font-weight="700" class="mono" data-i18n="bmad-retrospective">bmad-retrospective</text>
         <text x="12" y="45" class="sub" data-i18n="evidence-based-action-items">evidence-based, action items</text>
+        <circle class="swatch" cx="164" cy="0" r="9"/>
+        <text class="badge" x="164" y="4">A</text>
       </g>
       <path class="edge" d="M105 498 V521" stroke-linecap="round" marker-end="url(#wg-arrow)"/>
       <path class="node gate" d="M105 523 L175 545 L105 567 L35 545 z"/>
@@ -159,9 +191,11 @@
         <rect class="node" width="70" height="36" rx="2"/>
         <text x="35" y="23" font-size="12" font-weight="700" text-anchor="middle" class="mono" data-i18n="bmad">bmad</text>
       </g>
-      <g transform="translate(100 44)">
-        <rect class="node" width="150" height="36" rx="2"/>
+      <g class="agent-analyst" transform="translate(100 44)">
+        <rect class="node tone" width="150" height="36" rx="2"/>
         <text x="75" y="23" font-size="12" font-weight="700" text-anchor="middle" class="mono" data-i18n="bmad-project-context">bmad-project-context</text>
+        <circle class="swatch" cx="138" cy="0" r="9"/>
+        <text class="badge" x="138" y="4">M</text>
       </g>
       <g transform="translate(264 44)">
         <rect class="node" width="95" height="36" rx="2"/>
@@ -175,12 +209,46 @@
         <rect class="node" width="180" height="36" rx="2"/>
         <text x="90" y="23" font-size="12" font-weight="700" text-anchor="middle" class="mono" data-i18n="bmad-advanced-elicitation">bmad-advanced-elicitation</text>
       </g>
-      <g transform="translate(701 44)">
-        <rect class="node" width="145" height="36" rx="2"/>
+      <g class="agent-pm" transform="translate(701 44)">
+        <rect class="node tone" width="145" height="36" rx="2"/>
         <text x="72" y="23" font-size="12" font-weight="700" text-anchor="middle" class="mono" data-i18n="bmad-correct-course">bmad-correct-course</text>
+        <circle class="swatch" cx="133" cy="0" r="9"/>
+        <text class="badge" x="133" y="4">J</text>
       </g>
       <text x="16" y="98" class="sub" data-i18n="help-context-review-party-elicitation">Help, project context, review, party mode and elicitation fit anywhere.</text>
       <text x="16" y="114" class="sub" data-i18n="correct-course-mid-sprint-change">Correct course handles a significant mid-sprint change: update the PRD, architecture or epics, then re-run sprint planning.</text>
+    </g>
+
+    <!-- Agent colours -->
+    <g transform="translate(36 952)">
+      <text class="k" x="0" y="13" data-i18n="legend-agent-colours">Agent colours</text>
+      <g class="agent-analyst">
+        <circle class="swatch" cx="129" cy="9" r="9"/>
+        <text class="badge" x="129" y="13">M</text>
+      </g>
+      <text x="144" y="13" font-size="12" data-i18n="legend-mary">Mary, Analyst</text>
+      <g class="agent-pm">
+        <circle class="swatch" cx="259" cy="9" r="9"/>
+        <text class="badge" x="259" y="13">J</text>
+      </g>
+      <text x="274" y="13" font-size="12" data-i18n="legend-john">John, PM</text>
+      <g class="agent-ux">
+        <circle class="swatch" cx="359" cy="9" r="9"/>
+        <text class="badge" x="359" y="13">S</text>
+      </g>
+      <text x="374" y="13" font-size="12" data-i18n="legend-sally">Sally, UX</text>
+      <g class="agent-architect">
+        <circle class="swatch" cx="459" cy="9" r="9"/>
+        <text class="badge" x="459" y="13">W</text>
+      </g>
+      <text x="474" y="13" font-size="12" data-i18n="legend-winston">Winston, Architect</text>
+      <g class="agent-dev">
+        <circle class="swatch" cx="621" cy="9" r="9"/>
+        <text class="badge" x="621" y="13">A</text>
+      </g>
+      <text x="636" y="13" font-size="12" data-i18n="legend-amelia">Amelia, Developer</text>
+      <rect class="node" x="768" y="1" width="16" height="16" rx="2"/>
+      <text x="792" y="13" font-size="12" data-i18n="legend-no-agent">no agent</text>
     </g>
   </g>
 </svg>

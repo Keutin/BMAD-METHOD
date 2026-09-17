@@ -69,6 +69,13 @@
     "bmad-correct-course": "bmad-correct-course",
     "build-follows-what-it-finds": "Build follows what it finds. To break a pattern, say so in the request and write why in the spec.",
     "keep-the-greenfield-prd-archived": "Keep the greenfield PRD archived, out of reach of an ordinary change; the code is the context.",
-    "record-a-pitfall-correct-course": "Record a pitfall with bmad-project-context when an agent gets something wrong; correct course handles a significant mid-sprint change."
+    "record-a-pitfall-correct-course": "Record a pitfall with bmad-project-context when an agent gets something wrong; correct course handles a significant mid-sprint change.",
+    "legend-agent-colours": "Agent colours",
+    "legend-mary": "Mary, Analyst",
+    "legend-john": "John, PM",
+    "legend-sally": "Sally, UX",
+    "legend-winston": "Winston, Architect",
+    "legend-amelia": "Amelia, Developer",
+    "legend-no-agent": "no agent"
   }
 }
