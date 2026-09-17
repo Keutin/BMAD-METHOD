@@ -1,0 +1,28 @@
+{
+  "en": {
+    "heading": "SALLY, UX DESIGNER",
+    "subtitle": "Captures how the product looks and behaves, before the architecture fixes it in place.",
+    "name": "Sally",
+    "title": "UX Designer",
+    "skill-id": "bmad-agent-ux-designer",
+    "col-reads": "READS",
+    "col-skill": "SKILL",
+    "col-writes": "WRITES",
+    "col-next": "NEXT",
+    "cu-reads-product-brief": "product brief",
+    "cu-reads-prd": "PRD",
+    "cu-reads-your-direction": "your direction",
+    "code-cu-cu": "CU",
+    "cu-skill-bmad-ux": "bmad-ux",
+    "cu-purpose": "UX design",
+    "cu-writes-plan-ux-designs": "plan/ux-designs/",
+    "cu-writes-ux-project-date": "ux-{project}-{date}/",
+    "cu-writes-design-md": "DESIGN.md",
+    "cu-writes-experience-md": "EXPERIENCE.md",
+    "cu-next-ca-architecture": "CA architecture",
+    "cu-next-ce-epics": "CE epics",
+    "note": "bmad-ux can lead the PRD, follow it, or stand alone: it reads whatever planning artifacts you confirm.",
+    "legend-optional": "Grey lines are optional or conditional; a dashed arrow means every input is optional.",
+    "legend-paths": "plan/ = _bmad-output/planning-artifacts/   impl/ = _bmad-output/implementation-artifacts/   out/ = _bmad-output/"
+  }
+}
