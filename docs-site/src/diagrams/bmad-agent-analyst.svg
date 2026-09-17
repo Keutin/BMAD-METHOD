@@ -1,0 +1,151 @@
+<svg class="bmad-diagram" xmlns="http://www.w3.org/2000/svg" width="940" height="744" viewBox="0 0 940 744" role="img" aria-labelledby="aa-title aa-desc">
+  <title id="aa-title">Mary, Business Analyst: what each menu skill reads, writes and hands on</title>
+  <desc id="aa-desc">Mary, Business Analyst, bmad-agent-analyst. BP bmad-brainstorming reads topic or problem, your ideas; writes out/brainstorming/ brainstorm.html brainstorm-intent.md; next CB product brief, PRD. MR DR TR TS CR UV bmad-deep-recon reads topic or question, brief or PRD (optional); writes plan/research/ {type}-{topic}-{date}/ research.md; next CB product brief, PRD, CA architecture. CB bmad-product-brief reads brainstorms (optional), research (optional), your notes; writes plan/briefs/ brief-{project}-{date}/ brief.md · addendum.md; next PRD. WB bmad-prfaq reads concept, your docs, web research (optional); writes plan/prfaq-{project}.md; next PRD. PC bmad-project-context reads the repository, existing AGENTS.md (optional); writes AGENTS.md context block at the project root; next every agent, BD build.</desc>
+  <defs>
+    <marker id="aa-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path class="head" d="M 0 0 L 10 5 L 0 10 z"/>
+    </marker>
+  </defs>
+
+  <g fill="var(--dg-ink)">
+    <text x="470" y="40" font-size="20" font-weight="700" text-anchor="middle" letter-spacing="1" data-i18n="heading">MARY, BUSINESS ANALYST</text>
+    <text x="470" y="64" font-size="14" text-anchor="middle" data-i18n="subtitle">Turns an idea and the evidence around it into inputs the PM can plan from.</text>
+    <g class="agent-analyst" transform="translate(20 88)">
+      <rect class="node tone" width="900" height="44" rx="2"/>
+      <rect class="swatch" width="6" height="44"/>
+      <circle class="swatch" cx="34" cy="22" r="9"/>
+      <text class="badge" x="34" y="26">M</text>
+      <text x="52" y="27" font-size="16" font-weight="700" data-i18n="name">Mary</text>
+      <text x="106" y="27" class="sub" data-i18n="title">Business Analyst</text>
+      <text x="888" y="27" class="sub mono" text-anchor="end" data-i18n="skill-id">bmad-agent-analyst</text>
+    </g>
+    <text x="22" y="160" class="k" data-i18n="col-reads">READS</text>
+    <text x="218" y="160" class="k" data-i18n="col-skill">SKILL</text>
+    <text x="484" y="160" class="k" data-i18n="col-writes">WRITES</text>
+    <text x="780" y="160" class="k" data-i18n="col-next">NEXT</text>
+    <!-- BP bmad-brainstorming -->
+    <g class="agent-analyst">
+      <rect class="node" x="20" y="172" width="170" height="84" rx="2"/>
+      <text x="32" y="209.0" font-size="12" data-i18n="bp-reads-topic-or-problem">topic or problem</text>
+      <text x="32" y="227.0" font-size="12" data-i18n="bp-reads-your-ideas">your ideas</text>
+      <rect class="node hot tone" x="216" y="172" width="240" height="84" rx="2"/>
+      <rect class="code-chip" x="228" y="183.0" width="32" height="22" rx="2"/>
+      <text x="244.0" y="198.0" class="mono" font-size="12" font-weight="700" text-anchor="middle" data-i18n="code-bp-bp">BP</text>
+      <text x="228" y="225.0" class="mono" font-size="12" font-weight="700" data-i18n="bp-skill-bmad-brainstorming">bmad-brainstorming</text>
+      <text x="228" y="243.0" class="sub" data-i18n="bp-purpose">guided brainstorming</text>
+      <rect class="node tone" x="482" y="172" width="270" height="84" rx="2"/>
+      <text x="494" y="200.0" class="sub mono" data-i18n="bp-writes-out-brainstorming">out/brainstorming/</text>
+      <text x="506" y="218.0" class="sub mono" data-i18n="bp-writes-brainstorm-html">brainstorm.html</text>
+      <text x="506" y="236.0" class="sub mono" data-i18n="bp-writes-brainstorm-intent-md">brainstorm-intent.md</text>
+      <rect class="node" x="778" y="172" width="142" height="84" rx="2"/>
+      <g class="agent-analyst"><circle class="swatch" cx="798" cy="202.0" r="8"/><text class="badge" x="798" y="205.5">M</text></g>
+      <text x="812" y="206.0" font-size="12" data-i18n="bp-next-cb-product-brief">CB product brief</text>
+      <g class="agent-pm"><circle class="swatch" cx="798" cy="226.0" r="8"/><text class="badge" x="798" y="229.5">J</text></g>
+      <text x="812" y="230.0" font-size="12" data-i18n="bp-next-prd">PRD</text>
+      <path class="edge" d="M190 214.0 H214" marker-end="url(#aa-arrow)"/>
+      <path class="edge" d="M456 214.0 H480" marker-end="url(#aa-arrow)"/>
+      <path class="edge" d="M752 214.0 H776" marker-end="url(#aa-arrow)"/>
+    </g>
+    <!-- MR DR TR TS CR UV bmad-deep-recon -->
+    <g class="agent-analyst">
+      <rect class="node" x="20" y="270" width="170" height="100" rx="2"/>
+      <text x="32" y="315.0" font-size="12" data-i18n="rs-reads-topic-or-question">topic or question</text>
+      <text x="32" y="333.0" class="sub" data-i18n="rs-reads-brief-or-prd">brief or PRD</text>
+      <rect class="node hot tone" x="216" y="270" width="240" height="100" rx="2"/>
+      <rect class="code-chip" x="228" y="289.0" width="32" height="22" rx="2"/>
+      <text x="244.0" y="304.0" class="mono" font-size="12" font-weight="700" text-anchor="middle" data-i18n="code-rs-mr">MR</text>
+      <rect class="code-chip" x="264" y="289.0" width="32" height="22" rx="2"/>
+      <text x="280.0" y="304.0" class="mono" font-size="12" font-weight="700" text-anchor="middle" data-i18n="code-rs-dr">DR</text>
+      <rect class="code-chip" x="300" y="289.0" width="32" height="22" rx="2"/>
+      <text x="316.0" y="304.0" class="mono" font-size="12" font-weight="700" text-anchor="middle" data-i18n="code-rs-tr">TR</text>
+      <rect class="code-chip" x="336" y="289.0" width="32" height="22" rx="2"/>
+      <text x="352.0" y="304.0" class="mono" font-size="12" font-weight="700" text-anchor="middle" data-i18n="code-rs-ts">TS</text>
+      <rect class="code-chip" x="372" y="289.0" width="32" height="22" rx="2"/>
+      <text x="388.0" y="304.0" class="mono" font-size="12" font-weight="700" text-anchor="middle" data-i18n="code-rs-cr">CR</text>
+      <rect class="code-chip" x="408" y="289.0" width="32" height="22" rx="2"/>
+      <text x="424.0" y="304.0" class="mono" font-size="12" font-weight="700" text-anchor="middle" data-i18n="code-rs-uv">UV</text>
+      <text x="228" y="331.0" class="mono" font-size="12" font-weight="700" data-i18n="rs-skill-bmad-deep-recon">bmad-deep-recon</text>
+      <text x="228" y="349.0" class="sub" data-i18n="rs-purpose">research a decision</text>
+      <rect class="node tone" x="482" y="270" width="270" height="100" rx="2"/>
+      <text x="494" y="306.0" class="mono" font-size="12" data-i18n="rs-writes-plan-research">plan/research/</text>
+      <text x="506" y="324.0" class="mono" font-size="12" data-i18n="rs-writes-type-topic-date">{type}-{topic}-{date}/</text>
+      <text x="506" y="342.0" class="mono" font-size="12" data-i18n="rs-writes-research-md">research.md</text>
+      <rect class="node" x="778" y="270" width="142" height="100" rx="2"/>
+      <g class="agent-analyst"><circle class="swatch" cx="798" cy="296.0" r="8"/><text class="badge" x="798" y="299.5">M</text></g>
+      <text x="812" y="300.0" font-size="12" data-i18n="rs-next-cb-product-brief">CB product brief</text>
+      <g class="agent-pm"><circle class="swatch" cx="798" cy="320.0" r="8"/><text class="badge" x="798" y="323.5">J</text></g>
+      <text x="812" y="324.0" font-size="12" data-i18n="rs-next-prd">PRD</text>
+      <g class="agent-architect"><circle class="swatch" cx="798" cy="344.0" r="8"/><text class="badge" x="798" y="347.5">W</text></g>
+      <text x="812" y="348.0" font-size="12" data-i18n="rs-next-ca-architecture">CA architecture</text>
+      <path class="edge" d="M190 320.0 H214" marker-end="url(#aa-arrow)"/>
+      <path class="edge" d="M456 320.0 H480" marker-end="url(#aa-arrow)"/>
+      <path class="edge" d="M752 320.0 H776" marker-end="url(#aa-arrow)"/>
+    </g>
+    <!-- CB bmad-product-brief -->
+    <g class="agent-analyst">
+      <rect class="node" x="20" y="384" width="170" height="84" rx="2"/>
+      <text x="32" y="412.0" class="sub" data-i18n="cb-reads-brainstorms">brainstorms</text>
+      <text x="32" y="430.0" class="sub" data-i18n="cb-reads-research">research</text>
+      <text x="32" y="448.0" font-size="12" data-i18n="cb-reads-your-notes">your notes</text>
+      <rect class="node hot tone" x="216" y="384" width="240" height="84" rx="2"/>
+      <rect class="code-chip" x="228" y="395.0" width="32" height="22" rx="2"/>
+      <text x="244.0" y="410.0" class="mono" font-size="12" font-weight="700" text-anchor="middle" data-i18n="code-cb-cb">CB</text>
+      <text x="228" y="437.0" class="mono" font-size="12" font-weight="700" data-i18n="cb-skill-bmad-product-brief">bmad-product-brief</text>
+      <text x="228" y="455.0" class="sub" data-i18n="cb-purpose">create a product brief</text>
+      <rect class="node tone" x="482" y="384" width="270" height="84" rx="2"/>
+      <text x="494" y="412.0" class="mono" font-size="12" data-i18n="cb-writes-plan-briefs">plan/briefs/</text>
+      <text x="506" y="430.0" class="mono" font-size="12" data-i18n="cb-writes-brief-project-date">brief-{project}-{date}/</text>
+      <text x="506" y="448.0" class="mono" font-size="12" data-i18n="cb-writes-brief-md-addendum-md">brief.md · addendum.md</text>
+      <rect class="node" x="778" y="384" width="142" height="84" rx="2"/>
+      <g class="agent-pm"><circle class="swatch" cx="798" cy="426.0" r="8"/><text class="badge" x="798" y="429.5">J</text></g>
+      <text x="812" y="430.0" font-size="12" data-i18n="cb-next-prd">PRD</text>
+      <path class="edge" d="M190 426.0 H214" marker-end="url(#aa-arrow)"/>
+      <path class="edge" d="M456 426.0 H480" marker-end="url(#aa-arrow)"/>
+      <path class="edge" d="M752 426.0 H776" marker-end="url(#aa-arrow)"/>
+    </g>
+    <!-- WB bmad-prfaq -->
+    <g class="agent-analyst">
+      <rect class="node" x="20" y="482" width="170" height="84" rx="2"/>
+      <text x="32" y="519.0" font-size="12" data-i18n="wb-reads-concept-your-docs">concept, your docs</text>
+      <text x="32" y="537.0" class="sub" data-i18n="wb-reads-web-research">web research</text>
+      <rect class="node hot tone" x="216" y="482" width="240" height="84" rx="2"/>
+      <rect class="code-chip" x="228" y="493.0" width="32" height="22" rx="2"/>
+      <text x="244.0" y="508.0" class="mono" font-size="12" font-weight="700" text-anchor="middle" data-i18n="code-wb-wb">WB</text>
+      <text x="228" y="535.0" class="mono" font-size="12" font-weight="700" data-i18n="wb-skill-bmad-prfaq">bmad-prfaq</text>
+      <text x="228" y="553.0" class="sub" data-i18n="wb-purpose">Working Backwards PRFAQ</text>
+      <rect class="node tone" x="482" y="482" width="270" height="84" rx="2"/>
+      <text x="494" y="528.0" class="mono" font-size="12" data-i18n="wb-writes-plan-prfaq-project-md">plan/prfaq-{project}.md</text>
+      <rect class="node" x="778" y="482" width="142" height="84" rx="2"/>
+      <g class="agent-pm"><circle class="swatch" cx="798" cy="524.0" r="8"/><text class="badge" x="798" y="527.5">J</text></g>
+      <text x="812" y="528.0" font-size="12" data-i18n="wb-next-prd">PRD</text>
+      <path class="edge" d="M190 524.0 H214" marker-end="url(#aa-arrow)"/>
+      <path class="edge" d="M456 524.0 H480" marker-end="url(#aa-arrow)"/>
+      <path class="edge" d="M752 524.0 H776" marker-end="url(#aa-arrow)"/>
+    </g>
+    <!-- PC bmad-project-context -->
+    <g class="agent-analyst">
+      <rect class="node" x="20" y="580" width="170" height="84" rx="2"/>
+      <text x="32" y="617.0" font-size="12" data-i18n="pc-reads-the-repository">the repository</text>
+      <text x="32" y="635.0" class="sub" data-i18n="pc-reads-existing-agents-md">existing AGENTS.md</text>
+      <rect class="node hot tone" x="216" y="580" width="240" height="84" rx="2"/>
+      <rect class="code-chip" x="228" y="591.0" width="32" height="22" rx="2"/>
+      <text x="244.0" y="606.0" class="mono" font-size="12" font-weight="700" text-anchor="middle" data-i18n="code-pc-pc">PC</text>
+      <text x="228" y="633.0" class="mono" font-size="12" font-weight="700" data-i18n="pc-skill-bmad-project-context">bmad-project-context</text>
+      <text x="228" y="651.0" class="sub" data-i18n="pc-purpose">verified agent instructions</text>
+      <rect class="node tone" x="482" y="580" width="270" height="84" rx="2"/>
+      <text x="494" y="617.0" class="mono" font-size="12" data-i18n="pc-writes-agents-md-context-block">AGENTS.md context block</text>
+      <text x="506" y="635.0" font-size="12" data-i18n="pc-writes-at-the-project-root">at the project root</text>
+      <rect class="node" x="778" y="580" width="142" height="84" rx="2"/>
+      <circle class="swatch" cx="798" cy="610.0" r="8"/>
+      <text x="812" y="614.0" font-size="12" data-i18n="pc-next-every-agent">every agent</text>
+      <g class="agent-dev"><circle class="swatch" cx="798" cy="634.0" r="8"/><text class="badge" x="798" y="637.5">A</text></g>
+      <text x="812" y="638.0" font-size="12" data-i18n="pc-next-bd-build">BD build</text>
+      <path class="edge" d="M190 622.0 H214" marker-end="url(#aa-arrow)"/>
+      <path class="edge" d="M456 622.0 H480" marker-end="url(#aa-arrow)"/>
+      <path class="edge" d="M752 622.0 H776" marker-end="url(#aa-arrow)"/>
+    </g>
+    <path class="edge lens" d="M20 686 H920"/>
+    <text x="20" y="708" class="sub" data-i18n="legend-optional">Grey lines are optional or conditional; a dashed arrow means every input is optional.</text>
+    <text x="20" y="726" class="sub mono" data-i18n="legend-paths">plan/ = _bmad-output/planning-artifacts/   impl/ = _bmad-output/implementation-artifacts/   out/ = _bmad-output/</text>
+  </g>
+</svg>

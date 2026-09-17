@@ -1,0 +1,360 @@
+<svg class="bmad-diagram" xmlns="http://www.w3.org/2000/svg" width="940" height="1214" viewBox="0 0 940 1214" role="img" aria-labelledby="wf-title wf-desc">
+  <title id="wf-title">The files BMad writes, who writes them, and where they land</title>
+  <desc id="wf-desc">Left, the folder hierarchy of a project using BMad, with default paths from _bmad/config.toml. The project root holds AGENTS.md, whose context block bmad-project-context writes (Mary); the installed skills under .claude/skills or .agents/skills; _bmad with config.toml, custom overrides, scripts, method, toolbox and render; _bmad-output; docs as project knowledge; and tests written by bmad-qa-generate-e2e-tests (Amelia). _bmad-output holds brainstorming runs (Mary), forge runs and specs/spec-slug folders with SPEC.md, stories.yaml and stories (no agent), and party-mode. planning-artifacts holds research, briefs and the PRFAQ (Mary), prds (John), ux-designs (Sally), architecture (Winston), epics.md (John), implementation-readiness.md (John or Winston) and sprint-change proposals (John). implementation-artifacts holds sprint-status.yaml (John, Winston or Amelia), and story files spec-slug.md, epic context, deferred work, epic retrospectives and the test summary (Amelia). Right, the top-level sections of the key files: AGENTS.md context block; brief.md; prd.md; DESIGN.md and EXPERIENCE.md; ARCHITECTURE-SPINE.md; epics.md; sprint-status.yaml keys; SPEC.md and stories.yaml; the Build story file; and the epic retrospective.</desc>
+
+  <g fill="var(--dg-ink)">
+    <text x="470" y="40" font-size="20" font-weight="700" text-anchor="middle" letter-spacing="1" data-i18n="bmad-files-and-folders">BMAD FILES AND FOLDERS</text>
+    <text x="470" y="64" font-size="14" text-anchor="middle" data-i18n="what-each-agent-writes">What each agent writes, where it lands, and what is inside. Paths are the defaults.</text>
+    <text x="240" y="104" font-size="15" font-weight="700" text-anchor="middle" letter-spacing="1" data-i18n="folder-hierarchy">FOLDER HIERARCHY</text>
+    <text x="700" y="104" font-size="15" font-weight="700" text-anchor="middle" letter-spacing="1" data-i18n="inside-the-key-files">INSIDE THE KEY FILES</text>
+
+    <!-- Folder hierarchy -->
+    <g transform="translate(20 116)">
+      <rect class="node" width="440" height="816" rx="2"/>
+      <path class="edge lens" d="M20 33 V50 H29"/>
+      <path class="edge lens" d="M20 33 V74 H29"/>
+      <path class="edge lens" d="M20 33 V98 H29"/>
+      <path class="edge lens" d="M38 105 V122 H47"/>
+      <path class="edge lens" d="M38 105 V146 H47"/>
+      <path class="edge lens" d="M38 105 V170 H47"/>
+      <path class="edge lens" d="M38 105 V194 H47"/>
+      <path class="edge lens" d="M20 33 V218 H29"/>
+      <path class="edge lens" d="M38 225 V242 H47"/>
+      <path class="edge lens" d="M38 225 V266 H47"/>
+      <path class="edge lens" d="M38 225 V290 H47"/>
+      <path class="edge lens" d="M56 297 V314 H65"/>
+      <path class="edge lens" d="M38 225 V338 H47"/>
+      <path class="edge lens" d="M38 225 V362 H47"/>
+      <path class="edge lens" d="M56 369 V386 H65"/>
+      <path class="edge lens" d="M56 369 V410 H65"/>
+      <path class="edge lens" d="M56 369 V434 H65"/>
+      <path class="edge lens" d="M56 369 V458 H65"/>
+      <path class="edge lens" d="M56 369 V482 H65"/>
+      <path class="edge lens" d="M56 369 V506 H65"/>
+      <path class="edge lens" d="M56 369 V530 H65"/>
+      <path class="edge lens" d="M56 369 V554 H65"/>
+      <path class="edge lens" d="M56 369 V578 H65"/>
+      <path class="edge lens" d="M38 225 V602 H47"/>
+      <path class="edge lens" d="M56 609 V626 H65"/>
+      <path class="edge lens" d="M56 609 V650 H65"/>
+      <path class="edge lens" d="M56 609 V674 H65"/>
+      <path class="edge lens" d="M56 609 V698 H65"/>
+      <path class="edge lens" d="M56 609 V722 H65"/>
+      <path class="edge lens" d="M56 609 V746 H65"/>
+      <path class="edge lens" d="M20 33 V770 H29"/>
+      <path class="edge lens" d="M20 33 V794 H29"/>
+      <text x="16" y="30" font-size="12" font-weight="700" class="mono" data-i18n="tree-my-project">my-project/</text>
+      <g class="agent-analyst">
+        <rect class="node tone" x="29" y="40" width="399" height="20" rx="2"/>
+      </g>
+      <text x="34" y="54" font-size="12" class="mono" data-i18n="tree-agents-md">AGENTS.md</text>
+      <g class="agent-analyst">
+        <circle class="swatch" cx="414" cy="50" r="9"/>
+        <text class="badge" x="414" y="54">M</text>
+      </g>
+      <text x="34" y="78" font-size="12" font-weight="700" class="mono" data-i18n="tree-claude-skills">.claude/skills/</text>
+      <text x="426" y="78" class="sub" text-anchor="end" data-i18n="tree-claude-skills-note">installed skills</text>
+      <text x="34" y="102" font-size="12" font-weight="700" class="mono" data-i18n="tree-bmad">_bmad/</text>
+      <text x="426" y="102" class="sub" text-anchor="end" data-i18n="tree-bmad-note">the install</text>
+      <text x="52" y="126" font-size="12" class="mono" data-i18n="tree-config-toml">config.toml</text>
+      <text x="426" y="126" class="sub" text-anchor="end" data-i18n="tree-config-toml-note">paths, agents, project</text>
+      <text x="52" y="150" font-size="12" font-weight="700" class="mono" data-i18n="tree-custom">custom/</text>
+      <text x="426" y="150" class="sub" text-anchor="end" data-i18n="tree-custom-note">bmad-customize overrides</text>
+      <text x="52" y="174" font-size="12" font-weight="700" class="mono" data-i18n="tree-scripts-method-toolbox">scripts/ · method/ · toolbox/</text>
+      <text x="52" y="198" font-size="12" font-weight="700" class="mono" data-i18n="tree-render">render/</text>
+      <text x="426" y="198" class="sub" text-anchor="end" data-i18n="tree-render-note">rendered skill copies</text>
+      <text x="34" y="222" font-size="12" font-weight="700" class="mono" data-i18n="tree-bmad-output">_bmad-output/</text>
+      <text x="426" y="222" class="sub" text-anchor="end" data-i18n="tree-bmad-output-note">output_folder</text>
+      <g class="agent-analyst">
+        <rect class="node tone" x="47" y="232" width="381" height="20" rx="2"/>
+      </g>
+      <text x="52" y="246" font-size="12" font-weight="700" class="mono" data-i18n="tree-brainstorming-brainstorm-topic-date">brainstorming/brainstorm-{topic}-{date}/</text>
+      <g class="agent-analyst">
+        <circle class="swatch" cx="414" cy="242" r="9"/>
+        <text class="badge" x="414" y="246">M</text>
+      </g>
+      <text x="52" y="270" font-size="12" font-weight="700" class="mono" data-i18n="tree-forge-slug">forge/{slug}/</text>
+      <text x="426" y="270" class="sub" text-anchor="end" data-i18n="tree-forge-slug-note">bmad-forge-idea</text>
+      <text x="52" y="294" font-size="12" font-weight="700" class="mono" data-i18n="tree-specs-spec-slug">specs/spec-{slug}/</text>
+      <text x="426" y="294" class="sub" text-anchor="end" data-i18n="tree-specs-spec-slug-note">bmad-spec</text>
+      <text x="70" y="318" font-size="12" font-weight="700" class="mono" data-i18n="tree-spec-md-stories-yaml-stories">SPEC.md · stories.yaml · stories/</text>
+      <text x="52" y="342" font-size="12" font-weight="700" class="mono" data-i18n="tree-party-mode">party-mode/</text>
+      <text x="426" y="342" class="sub" text-anchor="end" data-i18n="tree-party-mode-note">bmad-party-mode</text>
+      <text x="52" y="366" font-size="12" font-weight="700" class="mono" data-i18n="tree-planning-artifacts">planning-artifacts/</text>
+      <text x="426" y="366" class="sub" text-anchor="end" data-i18n="tree-planning-artifacts-note">planning_artifacts</text>
+      <g class="agent-analyst">
+        <rect class="node tone" x="65" y="376" width="363" height="20" rx="2"/>
+      </g>
+      <text x="70" y="390" font-size="12" font-weight="700" class="mono" data-i18n="tree-research-type-topic-date">research/{type}-{topic}-{date}/</text>
+      <g class="agent-analyst">
+        <circle class="swatch" cx="414" cy="386" r="9"/>
+        <text class="badge" x="414" y="390">M</text>
+      </g>
+      <g class="agent-analyst">
+        <rect class="node tone" x="65" y="400" width="363" height="20" rx="2"/>
+      </g>
+      <text x="70" y="414" font-size="12" font-weight="700" class="mono" data-i18n="tree-briefs-brief-project-date">briefs/brief-{project}-{date}/</text>
+      <g class="agent-analyst">
+        <circle class="swatch" cx="414" cy="410" r="9"/>
+        <text class="badge" x="414" y="414">M</text>
+      </g>
+      <g class="agent-analyst">
+        <rect class="node tone" x="65" y="424" width="363" height="20" rx="2"/>
+      </g>
+      <text x="70" y="438" font-size="12" class="mono" data-i18n="tree-prfaq-project-md">prfaq-{project}.md</text>
+      <g class="agent-analyst">
+        <circle class="swatch" cx="414" cy="434" r="9"/>
+        <text class="badge" x="414" y="438">M</text>
+      </g>
+      <g class="agent-pm">
+        <rect class="node tone" x="65" y="448" width="363" height="20" rx="2"/>
+      </g>
+      <text x="70" y="462" font-size="12" font-weight="700" class="mono" data-i18n="tree-prds-prd-project-date">prds/prd-{project}-{date}/</text>
+      <g class="agent-pm">
+        <circle class="swatch" cx="414" cy="458" r="9"/>
+        <text class="badge" x="414" y="462">J</text>
+      </g>
+      <g class="agent-ux">
+        <rect class="node tone" x="65" y="472" width="363" height="20" rx="2"/>
+      </g>
+      <text x="70" y="486" font-size="12" font-weight="700" class="mono" data-i18n="tree-ux-designs-ux-project-date">ux-designs/ux-{project}-{date}/</text>
+      <g class="agent-ux">
+        <circle class="swatch" cx="414" cy="482" r="9"/>
+        <text class="badge" x="414" y="486">S</text>
+      </g>
+      <g class="agent-architect">
+        <rect class="node tone" x="65" y="496" width="363" height="20" rx="2"/>
+      </g>
+      <text x="70" y="510" font-size="12" font-weight="700" class="mono" data-i18n="tree-architecture-architecture-project-date">architecture/architecture-{project}-{date}/</text>
+      <g class="agent-architect">
+        <circle class="swatch" cx="414" cy="506" r="9"/>
+        <text class="badge" x="414" y="510">W</text>
+      </g>
+      <g class="agent-pm">
+        <rect class="node tone" x="65" y="520" width="363" height="20" rx="2"/>
+      </g>
+      <text x="70" y="534" font-size="12" class="mono" data-i18n="tree-epics-md">epics.md</text>
+      <g class="agent-pm">
+        <circle class="swatch" cx="414" cy="530" r="9"/>
+        <text class="badge" x="414" y="534">J</text>
+      </g>
+      <text x="70" y="558" font-size="12" class="mono" data-i18n="tree-implementation-readiness-md">implementation-readiness.md</text>
+      <g class="agent-architect">
+        <circle class="swatch" cx="414" cy="554" r="9"/>
+        <text class="badge" x="414" y="558">W</text>
+      </g>
+      <g class="agent-pm">
+        <circle class="swatch" cx="394" cy="554" r="9"/>
+        <text class="badge" x="394" y="558">J</text>
+      </g>
+      <g class="agent-pm">
+        <rect class="node tone" x="65" y="568" width="363" height="20" rx="2"/>
+      </g>
+      <text x="70" y="582" font-size="12" class="mono" data-i18n="tree-sprint-change-proposal-date-md">sprint-change-proposal-{date}.md</text>
+      <g class="agent-pm">
+        <circle class="swatch" cx="414" cy="578" r="9"/>
+        <text class="badge" x="414" y="582">J</text>
+      </g>
+      <text x="52" y="606" font-size="12" font-weight="700" class="mono" data-i18n="tree-implementation-artifacts">implementation-artifacts/</text>
+      <text x="426" y="606" class="sub" text-anchor="end" data-i18n="tree-implementation-artifacts-note">implementation_artifacts</text>
+      <text x="70" y="630" font-size="12" class="mono" data-i18n="tree-sprint-status-yaml">sprint-status.yaml</text>
+      <g class="agent-dev">
+        <circle class="swatch" cx="414" cy="626" r="9"/>
+        <text class="badge" x="414" y="630">A</text>
+      </g>
+      <g class="agent-architect">
+        <circle class="swatch" cx="394" cy="626" r="9"/>
+        <text class="badge" x="394" y="630">W</text>
+      </g>
+      <g class="agent-pm">
+        <circle class="swatch" cx="374" cy="626" r="9"/>
+        <text class="badge" x="374" y="630">J</text>
+      </g>
+      <g class="agent-dev">
+        <rect class="node tone" x="65" y="640" width="363" height="20" rx="2"/>
+      </g>
+      <text x="70" y="654" font-size="12" class="mono" data-i18n="tree-spec-slug-md">spec-{slug}.md</text>
+      <g class="agent-dev">
+        <circle class="swatch" cx="414" cy="650" r="9"/>
+        <text class="badge" x="414" y="654">A</text>
+      </g>
+      <g class="agent-dev">
+        <rect class="node tone" x="65" y="664" width="363" height="20" rx="2"/>
+      </g>
+      <text x="70" y="678" font-size="12" class="mono" data-i18n="tree-epic-n-context-md">epic-{N}-context.md</text>
+      <g class="agent-dev">
+        <circle class="swatch" cx="414" cy="674" r="9"/>
+        <text class="badge" x="414" y="678">A</text>
+      </g>
+      <g class="agent-dev">
+        <rect class="node tone" x="65" y="688" width="363" height="20" rx="2"/>
+      </g>
+      <text x="70" y="702" font-size="12" class="mono" data-i18n="tree-deferred-work-md">deferred-work.md</text>
+      <g class="agent-dev">
+        <circle class="swatch" cx="414" cy="698" r="9"/>
+        <text class="badge" x="414" y="702">A</text>
+      </g>
+      <g class="agent-dev">
+        <rect class="node tone" x="65" y="712" width="363" height="20" rx="2"/>
+      </g>
+      <text x="70" y="726" font-size="12" class="mono" data-i18n="tree-epic-n-retro-date-md">epic-{N}-retro-{date}.md</text>
+      <g class="agent-dev">
+        <circle class="swatch" cx="414" cy="722" r="9"/>
+        <text class="badge" x="414" y="726">A</text>
+      </g>
+      <g class="agent-dev">
+        <rect class="node tone" x="65" y="736" width="363" height="20" rx="2"/>
+      </g>
+      <text x="70" y="750" font-size="12" class="mono" data-i18n="tree-tests-test-summary-md">tests/test-summary.md</text>
+      <g class="agent-dev">
+        <circle class="swatch" cx="414" cy="746" r="9"/>
+        <text class="badge" x="414" y="750">A</text>
+      </g>
+      <text x="34" y="774" font-size="12" font-weight="700" class="mono" data-i18n="tree-docs">docs/</text>
+      <text x="426" y="774" class="sub" text-anchor="end" data-i18n="tree-docs-note">project_knowledge</text>
+      <g class="agent-dev">
+        <rect class="node tone" x="29" y="784" width="399" height="20" rx="2"/>
+      </g>
+      <text x="34" y="798" font-size="12" font-weight="700" class="mono" data-i18n="tree-tests-api-tests-e2e">tests/api/ · tests/e2e/</text>
+      <g class="agent-dev">
+        <circle class="swatch" cx="414" cy="794" r="9"/>
+        <text class="badge" x="414" y="798">A</text>
+      </g>
+    </g>
+
+    <!-- Inside the key files -->
+    <g class="agent-analyst" transform="translate(480 116)">
+      <rect class="node tone" width="440" height="68" rx="2"/>
+      <text x="12" y="22" font-size="13" font-weight="700" class="mono" data-i18n="card-1-title">AGENTS.md</text>
+      <text x="12" y="39" class="sub mono" data-i18n="card-1-where">project root, between bmad:context markers</text>
+      <text x="12" y="58" class="sub" data-i18n="card-1-line-1">verified commands · policy · conventions · pitfalls</text>
+      <circle class="swatch" cx="424" cy="0" r="9"/>
+      <text class="badge" x="424" y="4">M</text>
+    </g>
+    <g class="agent-analyst" transform="translate(480 200)">
+      <rect class="node tone" width="440" height="84" rx="2"/>
+      <text x="12" y="22" font-size="13" font-weight="700" class="mono" data-i18n="card-2-title">brief.md</text>
+      <text x="12" y="39" class="sub mono" data-i18n="card-2-where">briefs/brief-{project}-{date}/, with addendum.md</text>
+      <text x="12" y="58" class="sub" data-i18n="card-2-line-1">Executive Summary · The Problem · The Solution</text>
+      <text x="12" y="74" class="sub" data-i18n="card-2-line-2">What Makes This Different · Who This Serves · Success Criteria · Scope · Vision</text>
+      <circle class="swatch" cx="424" cy="0" r="9"/>
+      <text class="badge" x="424" y="4">M</text>
+    </g>
+    <g class="agent-pm" transform="translate(480 300)">
+      <rect class="node tone" width="440" height="84" rx="2"/>
+      <text x="12" y="22" font-size="13" font-weight="700" class="mono" data-i18n="card-3-title">prd.md</text>
+      <text x="12" y="39" class="sub mono" data-i18n="card-3-where">prds/prd-{project}-{date}/, with addendum and reviews</text>
+      <text x="12" y="58" class="sub" data-i18n="card-3-line-1">Purpose · Vision · Target User · Glossary · Features (FR-n)</text>
+      <text x="12" y="74" class="sub" data-i18n="card-3-line-2">Non-Goals · MVP Scope · Success Metrics · Open Questions · Assumptions</text>
+      <circle class="swatch" cx="424" cy="0" r="9"/>
+      <text class="badge" x="424" y="4">J</text>
+    </g>
+    <g class="agent-ux" transform="translate(480 400)">
+      <rect class="node tone" width="440" height="100" rx="2"/>
+      <text x="12" y="22" font-size="13" font-weight="700" class="mono" data-i18n="card-4-title">DESIGN.md + EXPERIENCE.md</text>
+      <text x="12" y="39" class="sub mono" data-i18n="card-4-where">ux-designs/ux-{project}-{date}/</text>
+      <text x="12" y="58" class="sub" data-i18n="card-4-line-1">DESIGN.md is the look; EXPERIENCE.md is the behaviour:</text>
+      <text x="12" y="74" class="sub" data-i18n="card-4-line-2">Foundation · Information Architecture · Voice and Tone · Components</text>
+      <text x="12" y="90" class="sub" data-i18n="card-4-line-3">State Patterns · Interaction Primitives · Accessibility Floor · Key Flows</text>
+      <circle class="swatch" cx="424" cy="0" r="9"/>
+      <text class="badge" x="424" y="4">S</text>
+    </g>
+    <g class="agent-architect" transform="translate(480 516)">
+      <rect class="node tone" width="440" height="100" rx="2"/>
+      <text x="12" y="22" font-size="13" font-weight="700" class="mono" data-i18n="card-5-title">ARCHITECTURE-SPINE.md</text>
+      <text x="12" y="39" class="sub mono" data-i18n="card-5-where">architecture/architecture-{project}-{date}/</text>
+      <text x="12" y="58" class="sub" data-i18n="card-5-line-1">Design Paradigm · Inherited Invariants · Invariants &amp; Rules (AD-n)</text>
+      <text x="12" y="74" class="sub" data-i18n="card-5-line-2">Consistency Conventions · Stack · Structural Seed</text>
+      <text x="12" y="90" class="sub" data-i18n="card-5-line-3">Capability → Architecture Map · Deferred</text>
+      <circle class="swatch" cx="424" cy="0" r="9"/>
+      <text class="badge" x="424" y="4">W</text>
+    </g>
+    <g class="agent-pm" transform="translate(480 632)">
+      <rect class="node tone" width="440" height="84" rx="2"/>
+      <text x="12" y="22" font-size="13" font-weight="700" class="mono" data-i18n="card-6-title">epics.md</text>
+      <text x="12" y="39" class="sub mono" data-i18n="card-6-where">planning-artifacts/</text>
+      <text x="12" y="58" class="sub" data-i18n="card-6-line-1">Overview · Requirements Inventory (FR, NFR, UX, coverage map)</text>
+      <text x="12" y="74" class="sub" data-i18n="card-6-line-2">Epic List · ## Epic N · ### Story N.M</text>
+      <circle class="swatch" cx="424" cy="0" r="9"/>
+      <text class="badge" x="424" y="4">J</text>
+    </g>
+    <g transform="translate(480 732)">
+      <rect class="node" width="440" height="84" rx="2"/>
+      <text x="12" y="22" font-size="13" font-weight="700" class="mono" data-i18n="card-7-title">sprint-status.yaml</text>
+      <text x="12" y="39" class="sub mono" data-i18n="card-7-where">implementation-artifacts/</text>
+      <text x="12" y="58" class="sub" data-i18n="card-7-line-1">project · tracking_system · story_location · action_items</text>
+      <text x="12" y="74" class="sub" data-i18n="card-7-line-2">development_status: epic-N · N-M-slug · epic-N-retrospective</text>
+      <g class="agent-dev">
+        <circle class="swatch" cx="424" cy="0" r="9"/>
+        <text class="badge" x="424" y="4">A</text>
+      </g>
+      <g class="agent-architect">
+        <circle class="swatch" cx="404" cy="0" r="9"/>
+        <text class="badge" x="404" y="4">W</text>
+      </g>
+      <g class="agent-pm">
+        <circle class="swatch" cx="384" cy="0" r="9"/>
+        <text class="badge" x="384" y="4">J</text>
+      </g>
+    </g>
+    <g transform="translate(480 832)">
+      <rect class="node" width="440" height="100" rx="2"/>
+      <text x="12" y="22" font-size="13" font-weight="700" class="mono" data-i18n="card-8-title">SPEC.md + stories.yaml</text>
+      <text x="12" y="39" class="sub mono" data-i18n="card-8-where">specs/spec-{slug}/, written by bmad-spec</text>
+      <text x="12" y="58" class="sub" data-i18n="card-8-line-1">Why · Capabilities · Constraints · Non-goals · Success signal</text>
+      <text x="12" y="74" class="sub" data-i18n="card-8-line-2">Assumptions · Open Questions; companions such as brownfield.md</text>
+      <text x="12" y="90" class="sub" data-i18n="card-8-line-3">stories.yaml: id · title · description · checkpoints · invoke_dev_with</text>
+    </g>
+    <g class="agent-dev" transform="translate(480 948)">
+      <rect class="node tone" width="440" height="100" rx="2"/>
+      <text x="12" y="22" font-size="13" font-weight="700" class="mono" data-i18n="card-9-title">spec-{slug}.md</text>
+      <text x="12" y="39" class="sub mono" data-i18n="card-9-where">story file, one per Build run</text>
+      <text x="12" y="58" class="sub" data-i18n="card-9-line-1">Intent · Boundaries &amp; Constraints · I/O &amp; Edge-Case Matrix · Code Map</text>
+      <text x="12" y="74" class="sub" data-i18n="card-9-line-2">Tasks &amp; Acceptance · Implementation Notes · Spec Change Log</text>
+      <text x="12" y="90" class="sub" data-i18n="card-9-line-3">Review Triage Log · Design Notes · Verification</text>
+      <circle class="swatch" cx="424" cy="0" r="9"/>
+      <text class="badge" x="424" y="4">A</text>
+    </g>
+    <g class="agent-dev" transform="translate(480 1064)">
+      <rect class="node tone" width="440" height="84" rx="2"/>
+      <text x="12" y="22" font-size="13" font-weight="700" class="mono" data-i18n="card-10-title">epic-{N}-retro-{date}.md</text>
+      <text x="12" y="39" class="sub mono" data-i18n="card-10-where">or RETROSPECTIVE.md in a spec folder</text>
+      <text x="12" y="58" class="sub" data-i18n="card-10-line-1">Epic summary · Findings · Behavior verification · Previous-retro follow-through</text>
+      <text x="12" y="74" class="sub" data-i18n="card-10-line-2">Action items · Acceptance verdict · Open questions · Assumptions</text>
+      <circle class="swatch" cx="424" cy="0" r="9"/>
+      <text class="badge" x="424" y="4">A</text>
+    </g>
+
+    <!-- Agent colours -->
+    <g transform="translate(36 1174)">
+      <text x="0" y="13" class="k" data-i18n="legend-agent-colours">Agent colours</text>
+      <g class="agent-analyst">
+        <circle class="swatch" cx="129" cy="9" r="9"/>
+        <text class="badge" x="129" y="13">M</text>
+      </g>
+      <text x="144" y="13" font-size="12" data-i18n="legend-mary">Mary, Analyst</text>
+      <g class="agent-pm">
+        <circle class="swatch" cx="259" cy="9" r="9"/>
+        <text class="badge" x="259" y="13">J</text>
+      </g>
+      <text x="274" y="13" font-size="12" data-i18n="legend-john">John, PM</text>
+      <g class="agent-ux">
+        <circle class="swatch" cx="359" cy="9" r="9"/>
+        <text class="badge" x="359" y="13">S</text>
+      </g>
+      <text x="374" y="13" font-size="12" data-i18n="legend-sally">Sally, UX</text>
+      <g class="agent-architect">
+        <circle class="swatch" cx="459" cy="9" r="9"/>
+        <text class="badge" x="459" y="13">W</text>
+      </g>
+      <text x="474" y="13" font-size="12" data-i18n="legend-winston">Winston, Architect</text>
+      <g class="agent-dev">
+        <circle class="swatch" cx="621" cy="9" r="9"/>
+        <text class="badge" x="621" y="13">A</text>
+      </g>
+      <text x="636" y="13" font-size="12" data-i18n="legend-amelia">Amelia, Developer</text>
+      <rect class="node" x="768" y="1" width="16" height="16" rx="2"/>
+      <text x="792" y="13" font-size="12" data-i18n="legend-no-agent">no agent</text>
+    </g>
+  </g>
+</svg>

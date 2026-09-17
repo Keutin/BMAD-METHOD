@@ -1,0 +1,451 @@
+<svg class="bmad-diagram" xmlns="http://www.w3.org/2000/svg" width="940" height="1951" viewBox="0 0 940 1951" role="img" aria-labelledby="wy-title wy-desc">
+  <title id="wy-title">Glossary of the terms inside BMad files</title>
+  <desc id="wy-desc">A card per file type, coloured by the agent that writes it, each listing its terms with a short meaning. Abbreviations: AC, AD-n, CAP-n, E2E, FR-n, I/O, MVP, NFR, PRD, PRFAQ, SM-n, UJ-n, UX, UX-DRn. Cards for shared terms, product brief and PRFAQ, research, PRD, UX design, architecture spine, epics and stories, sprint status, spec, Build story file, code review, retrospective, sprint change proposal, project context, and brainstorming and forge. The full definitions are in the tables on this page.</desc>
+
+  <g fill="var(--dg-ink)">
+    <text x="470" y="40" font-size="20" font-weight="700" text-anchor="middle" letter-spacing="1" data-i18n="bmad-glossary">BMAD GLOSSARY</text>
+    <text x="470" y="64" font-size="14" text-anchor="middle" data-i18n="what-you-read-inside-bmad-files">What you read inside BMad files, grouped by the file and coloured by the agent that writes it.</text>
+
+    <!-- Abbreviations -->
+    <g transform="translate(20 96)">
+      <rect class="node" width="440" height="326" rx="2"/>
+      <text x="12" y="22" font-size="13" font-weight="700" letter-spacing="1" data-i18n="abbreviations-title">ABBREVIATIONS</text>
+      <text x="12" y="39" class="sub mono" data-i18n="abbreviations-where">used across the files</text>
+      <path class="edge lens" d="M12 48 H428"/>
+      <text x="12" y="64" font-size="11" font-weight="700" class="mono" data-i18n="abbreviations-ac">AC</text>
+      <text x="35" y="64" class="sub" data-i18n="abbreviations-ac-gloss">acceptance criteria; spelled out, not numbered</text>
+      <text x="12" y="83" font-size="11" font-weight="700" class="mono" data-i18n="abbreviations-ad-n">AD-n</text>
+      <text x="48" y="83" class="sub" data-i18n="abbreviations-ad-n-gloss">architecture decision; IDs never reused</text>
+      <text x="12" y="102" font-size="11" font-weight="700" class="mono" data-i18n="abbreviations-cap-n">CAP-n</text>
+      <text x="55" y="102" class="sub" data-i18n="abbreviations-cap-n-gloss">capability in SPEC.md, with intent and success</text>
+      <text x="12" y="121" font-size="11" font-weight="700" class="mono" data-i18n="abbreviations-e2e">E2E</text>
+      <text x="42" y="121" class="sub" data-i18n="abbreviations-e2e-gloss">end-to-end tests from bmad-qa-generate-e2e-tests</text>
+      <text x="12" y="140" font-size="11" font-weight="700" class="mono" data-i18n="abbreviations-fr-n-frn">FR-n / FRn</text>
+      <text x="88" y="140" class="sub" data-i18n="abbreviations-fr-n-frn-gloss">functional requirement: FR-1 in PRD, FR1 in epics</text>
+      <text x="12" y="159" font-size="11" font-weight="700" class="mono" data-i18n="abbreviations-i-o">I/O</text>
+      <text x="42" y="159" class="sub" data-i18n="abbreviations-i-o-gloss">input and output, as in the edge-case matrix</text>
+      <text x="12" y="178" font-size="11" font-weight="700" class="mono" data-i18n="abbreviations-mvp">MVP</text>
+      <text x="42" y="178" class="sub" data-i18n="abbreviations-mvp-gloss">minimum viable product: In and Out lists in the PRD</text>
+      <text x="12" y="197" font-size="11" font-weight="700" class="mono" data-i18n="abbreviations-nfr-nfrn">NFR / NFRn</text>
+      <text x="88" y="197" class="sub" data-i18n="abbreviations-nfr-nfrn-gloss">non-functional requirement; numbered only in epics</text>
+      <text x="12" y="216" font-size="11" font-weight="700" class="mono" data-i18n="abbreviations-prd">PRD</text>
+      <text x="42" y="216" class="sub" data-i18n="abbreviations-prd-gloss">product requirements document, from bmad-prd</text>
+      <text x="12" y="235" font-size="11" font-weight="700" class="mono" data-i18n="abbreviations-prfaq">PRFAQ</text>
+      <text x="55" y="235" class="sub" data-i18n="abbreviations-prfaq-gloss">press release + FAQ, Working Backwards</text>
+      <text x="12" y="254" font-size="11" font-weight="700" class="mono" data-i18n="abbreviations-sm-n-sm-cn">SM-n / SM-Cn</text>
+      <text x="101" y="254" class="sub" data-i18n="abbreviations-sm-n-sm-cn-gloss">success metric / counter-metric in the PRD</text>
+      <text x="12" y="273" font-size="11" font-weight="700" class="mono" data-i18n="abbreviations-uj-n">UJ-n</text>
+      <text x="48" y="273" class="sub" data-i18n="abbreviations-uj-n-gloss">key user journey in the PRD</text>
+      <text x="12" y="292" font-size="11" font-weight="700" class="mono" data-i18n="abbreviations-ux">UX</text>
+      <text x="35" y="292" class="sub" data-i18n="abbreviations-ux-gloss">user experience: DESIGN.md + EXPERIENCE.md</text>
+      <text x="12" y="311" font-size="11" font-weight="700" class="mono" data-i18n="abbreviations-ux-drn">UX-DRn</text>
+      <text x="62" y="311" class="sub" data-i18n="abbreviations-ux-drn-gloss">UX design requirement extracted into epics.md</text>
+    </g>
+    <!-- Shared across files -->
+    <g transform="translate(20 438)">
+      <rect class="node" width="440" height="212" rx="2"/>
+      <text x="12" y="22" font-size="13" font-weight="700" letter-spacing="1" data-i18n="shared-across-files-title">SHARED ACROSS FILES</text>
+      <text x="12" y="39" class="sub mono" data-i18n="shared-across-files-where">any run folder</text>
+      <path class="edge lens" d="M12 48 H428"/>
+      <text x="12" y="64" font-size="11" font-weight="700" class="mono" data-i18n="shared-across-files-addendum-md">addendum.md</text>
+      <text x="95" y="64" class="sub" data-i18n="shared-across-files-addendum-md-gloss">depth that does not fit the brief or PRD</text>
+      <text x="12" y="83" font-size="11" font-weight="700" class="mono" data-i18n="shared-across-files-companion">Companion</text>
+      <text x="81" y="83" class="sub" data-i18n="shared-across-files-companion-gloss">file read alongside a spec, listed in companions:</text>
+      <text x="12" y="102" font-size="11" font-weight="700" class="mono" data-i18n="shared-across-files-halt">HALT</text>
+      <text x="48" y="102" class="sub" data-i18n="shared-across-files-halt-gloss">a skill stops and waits; unattended runs say why</text>
+      <text x="12" y="121" font-size="11" font-weight="700" class="mono" data-i18n="shared-across-files-lock">Lock</text>
+      <text x="48" y="121" class="sub" data-i18n="shared-across-files-lock-gloss">forge: a settled point that will not be reopened</text>
+      <text x="12" y="140" font-size="11" font-weight="700" class="mono" data-i18n="shared-across-files-memlog-md">.memlog.md</text>
+      <text x="88" y="140" class="sub" data-i18n="shared-across-files-memlog-md-gloss">append-only run memory; the document is distilled from it</text>
+      <text x="12" y="159" font-size="11" font-weight="700" class="mono" data-i18n="shared-across-files-output-paths">Output paths</text>
+      <text x="101" y="159" class="sub" data-i18n="shared-across-files-output-paths-gloss">the config.toml folders where skills write</text>
+      <text x="12" y="178" font-size="11" font-weight="700" class="mono" data-i18n="shared-across-files-review-slug-md">review-{slug}.md</text>
+      <text x="128" y="178" class="sub" data-i18n="shared-across-files-review-slug-md-gloss">one reviewer lens's full findings</text>
+      <text x="12" y="197" font-size="11" font-weight="700" class="mono" data-i18n="shared-across-files-status-draft-final">status: draft / final</text>
+      <text x="161" y="197" class="sub" data-i18n="shared-across-files-status-draft-final-gloss">lifecycle of a PRD, UX pair or spine</text>
+    </g>
+    <!-- Product brief and PRFAQ -->
+    <g class="agent-analyst" transform="translate(20 666)">
+      <rect class="node tone" width="440" height="155" rx="2"/>
+      <text x="12" y="22" font-size="13" font-weight="700" letter-spacing="1" data-i18n="product-brief-and-prfaq-title">PRODUCT BRIEF AND PRFAQ</text>
+      <text x="12" y="39" class="sub mono" data-i18n="product-brief-and-prfaq-where">brief.md · prfaq-{project}.md</text>
+      <path class="edge lens" d="M12 48 H428"/>
+      <text x="12" y="64" font-size="11" font-weight="700" class="mono" data-i18n="product-brief-and-prfaq-coaching-notes">Coaching notes</text>
+      <text x="114" y="64" class="sub" data-i18n="product-brief-and-prfaq-coaching-notes-gloss">hidden per-stage notes feeding the distillate</text>
+      <text x="12" y="83" font-size="11" font-weight="700" class="mono" data-i18n="product-brief-and-prfaq-distillate">Distillate</text>
+      <text x="88" y="83" class="sub" data-i18n="product-brief-and-prfaq-distillate-gloss">short bullet notes the PRD reads</text>
+      <text x="12" y="102" font-size="11" font-weight="700" class="mono" data-i18n="product-brief-and-prfaq-stage">Stage</text>
+      <text x="55" y="102" class="sub" data-i18n="product-brief-and-prfaq-stage-gloss">last finished PRFAQ stage, 1 Ignition to 5 Verdict</text>
+      <text x="12" y="121" font-size="11" font-weight="700" class="mono" data-i18n="product-brief-and-prfaq-verdict-ratings">Verdict ratings</text>
+      <text x="121" y="121" class="sub" data-i18n="product-brief-and-prfaq-verdict-ratings-gloss">Forged in steel · Needs more heat · Cracks</text>
+      <text x="12" y="140" font-size="11" font-weight="700" class="mono" data-i18n="product-brief-and-prfaq-what-makes-this-different">What Makes This Different</text>
+      <text x="187" y="140" class="sub" data-i18n="product-brief-and-prfaq-what-makes-this-different-gloss">why this beats the alternatives</text>
+      <g class="agent-analyst">
+        <circle class="swatch" cx="424" cy="0" r="9"/>
+        <text class="badge" x="424" y="4">M</text>
+      </g>
+    </g>
+    <!-- Research -->
+    <g class="agent-analyst" transform="translate(20 837)">
+      <rect class="node tone" width="440" height="212" rx="2"/>
+      <text x="12" y="22" font-size="13" font-weight="700" letter-spacing="1" data-i18n="research-title">RESEARCH</text>
+      <text x="12" y="39" class="sub mono" data-i18n="research-where">research/{type}-{topic}-{date}/</text>
+      <path class="edge lens" d="M12 48 H428"/>
+      <text x="12" y="64" font-size="11" font-weight="700" class="mono" data-i18n="research-brief-md">brief.md</text>
+      <text x="75" y="64" class="sub" data-i18n="research-brief-md-gloss">the research prompt, ready to paste</text>
+      <text x="12" y="83" font-size="11" font-weight="700" class="mono" data-i18n="research-claim-status">Claim status</text>
+      <text x="101" y="83" class="sub" data-i18n="research-claim-status-gloss">verified, unverified, disputed or overturned</text>
+      <text x="12" y="102" font-size="11" font-weight="700" class="mono" data-i18n="research-confidence">Confidence</text>
+      <text x="88" y="102" class="sub" data-i18n="research-confidence-gloss">high, medium or low</text>
+      <text x="12" y="121" font-size="11" font-weight="700" class="mono" data-i18n="research-digest">Digest</text>
+      <text x="62" y="121" class="sub" data-i18n="research-digest-gloss">one assistant's filtered findings per round</text>
+      <text x="12" y="140" font-size="11" font-weight="700" class="mono" data-i18n="research-freshness-bar">Freshness bar</text>
+      <text x="108" y="140" class="sub" data-i18n="research-freshness-bar-gloss">months a kind of claim stays current</text>
+      <text x="12" y="159" font-size="11" font-weight="700" class="mono" data-i18n="research-red-team">Red team</text>
+      <text x="75" y="159" class="sub" data-i18n="research-red-team-gloss">skeptic pass looking for counter-evidence</text>
+      <text x="12" y="178" font-size="11" font-weight="700" class="mono" data-i18n="research-ref-n">ref=[n]</text>
+      <text x="68" y="178" class="sub" data-i18n="research-ref-n-gloss">inline citation to the source appendix</text>
+      <text x="12" y="197" font-size="11" font-weight="700" class="mono" data-i18n="research-two-source-class">Two-source class</text>
+      <text x="128" y="197" class="sub" data-i18n="research-two-source-class-gloss">claims needing two independent sources</text>
+      <g class="agent-analyst">
+        <circle class="swatch" cx="424" cy="0" r="9"/>
+        <text class="badge" x="424" y="4">M</text>
+      </g>
+    </g>
+    <!-- PRD -->
+    <g class="agent-pm" transform="translate(20 1065)">
+      <rect class="node tone" width="440" height="193" rx="2"/>
+      <text x="12" y="22" font-size="13" font-weight="700" letter-spacing="1" data-i18n="prd-title">PRD</text>
+      <text x="12" y="39" class="sub mono" data-i18n="prd-where">prds/prd-{project}-{date}/prd.md</text>
+      <path class="edge lens" d="M12 48 H428"/>
+      <text x="12" y="64" font-size="11" font-weight="700" class="mono" data-i18n="prd-assumption">[ASSUMPTION: …]</text>
+      <text x="121" y="64" class="sub" data-i18n="prd-assumption-gloss">inline guess, indexed at the end</text>
+      <text x="12" y="83" font-size="11" font-weight="700" class="mono" data-i18n="prd-cross-cutting-nfrs">Cross-Cutting NFRs</text>
+      <text x="141" y="83" class="sub" data-i18n="prd-cross-cutting-nfrs-gloss">qualities that apply to every feature</text>
+      <text x="12" y="102" font-size="11" font-weight="700" class="mono" data-i18n="prd-glossary">Glossary</text>
+      <text x="75" y="102" class="sub" data-i18n="prd-glossary-gloss">the only domain nouns the PRD may use</text>
+      <text x="12" y="121" font-size="11" font-weight="700" class="mono" data-i18n="prd-jobs-to-be-done">Jobs To Be Done</text>
+      <text x="121" y="121" class="sub" data-i18n="prd-jobs-to-be-done-gloss">what the target user is trying to get done</text>
+      <text x="12" y="140" font-size="11" font-weight="700" class="mono" data-i18n="prd-non-goals">Non-Goals</text>
+      <text x="81" y="140" class="sub" data-i18n="prd-non-goals-gloss">what the product deliberately will not do</text>
+      <text x="12" y="159" font-size="11" font-weight="700" class="mono" data-i18n="prd-note-for-pm">[NOTE FOR PM]</text>
+      <text x="108" y="159" class="sub" data-i18n="prd-note-for-pm-gloss">callout for the PM to resolve</text>
+      <text x="12" y="178" font-size="11" font-weight="700" class="mono" data-i18n="prd-validation-report">Validation report</text>
+      <text x="134" y="178" class="sub" data-i18n="prd-validation-report-gloss">dimensions strong to broken, grade to Poor</text>
+      <g class="agent-pm">
+        <circle class="swatch" cx="424" cy="0" r="9"/>
+        <text class="badge" x="424" y="4">J</text>
+      </g>
+    </g>
+    <!-- UX design -->
+    <g class="agent-ux" transform="translate(20 1274)">
+      <rect class="node tone" width="440" height="193" rx="2"/>
+      <text x="12" y="22" font-size="13" font-weight="700" letter-spacing="1" data-i18n="ux-design-title">UX DESIGN</text>
+      <text x="12" y="39" class="sub mono" data-i18n="ux-design-where">ux-designs/ux-{project}-{date}/</text>
+      <path class="edge lens" d="M12 48 H428"/>
+      <text x="12" y="64" font-size="11" font-weight="700" class="mono" data-i18n="ux-design-accessibility-floor">Accessibility Floor</text>
+      <text x="147" y="64" class="sub" data-i18n="ux-design-accessibility-floor-gloss">behavioural accessibility minimum</text>
+      <text x="12" y="83" font-size="11" font-weight="700" class="mono" data-i18n="ux-design-design-md">DESIGN.md</text>
+      <text x="81" y="83" class="sub" data-i18n="ux-design-design-md-gloss">the look: brand, colors, type, spacing, components</text>
+      <text x="12" y="102" font-size="11" font-weight="700" class="mono" data-i18n="ux-design-experience-md">EXPERIENCE.md</text>
+      <text x="108" y="102" class="sub" data-i18n="ux-design-experience-md-gloss">the behaviour: IA, voice, patterns, flows</text>
+      <text x="12" y="121" font-size="11" font-weight="700" class="mono" data-i18n="ux-design-foundation">Foundation</text>
+      <text x="88" y="121" class="sub" data-i18n="ux-design-foundation-gloss">form factor and UI system</text>
+      <text x="12" y="140" font-size="11" font-weight="700" class="mono" data-i18n="ux-design-interaction-primitives">Interaction Primitives</text>
+      <text x="167" y="140" class="sub" data-i18n="ux-design-interaction-primitives-gloss">basic interactions flows are built from</text>
+      <text x="12" y="159" font-size="11" font-weight="700" class="mono" data-i18n="ux-design-key-flows">Key Flows</text>
+      <text x="81" y="159" class="sub" data-i18n="ux-design-key-flows-gloss">journeys with a named protagonist</text>
+      <text x="12" y="178" font-size="11" font-weight="700" class="mono" data-i18n="ux-design-working">.working/</text>
+      <text x="81" y="178" class="sub" data-i18n="ux-design-working-gloss">drafts, mockups and wireframes</text>
+      <g class="agent-ux">
+        <circle class="swatch" cx="424" cy="0" r="9"/>
+        <text class="badge" x="424" y="4">S</text>
+      </g>
+    </g>
+    <!-- Architecture spine -->
+    <g class="agent-architect" transform="translate(20 1483)">
+      <rect class="node tone" width="440" height="269" rx="2"/>
+      <text x="12" y="22" font-size="13" font-weight="700" letter-spacing="1" data-i18n="architecture-spine-title">ARCHITECTURE SPINE</text>
+      <text x="12" y="39" class="sub mono" data-i18n="architecture-spine-where">ARCHITECTURE-SPINE.md</text>
+      <path class="edge lens" d="M12 48 H428"/>
+      <text x="12" y="64" font-size="11" font-weight="700" class="mono" data-i18n="architecture-spine-adopted">[ADOPTED]</text>
+      <text x="81" y="64" class="sub" data-i18n="architecture-spine-adopted-gloss">AD recording a decision already made</text>
+      <text x="12" y="83" font-size="11" font-weight="700" class="mono" data-i18n="architecture-spine-altitude">Altitude</text>
+      <text x="75" y="83" class="sub" data-i18n="architecture-spine-altitude-gloss">scope: initiative, feature or epic</text>
+      <text x="12" y="102" font-size="11" font-weight="700" class="mono" data-i18n="architecture-spine-binds-prevents-rule">Binds / Prevents / Rule</text>
+      <text x="174" y="102" class="sub" data-i18n="architecture-spine-binds-prevents-rule-gloss">the three fields of every AD</text>
+      <text x="12" y="121" font-size="11" font-weight="700" class="mono" data-i18n="architecture-spine-capability-architecture-map">Capability → Architecture Map</text>
+      <text x="213" y="121" class="sub" data-i18n="architecture-spine-capability-architecture-map-gloss">where each capability lives</text>
+      <text x="12" y="140" font-size="11" font-weight="700" class="mono" data-i18n="architecture-spine-consistency-conventions">Consistency Conventions</text>
+      <text x="174" y="140" class="sub" data-i18n="architecture-spine-consistency-conventions-gloss">choices that keep parts alike</text>
+      <text x="12" y="159" font-size="11" font-weight="700" class="mono" data-i18n="architecture-spine-deferred">Deferred</text>
+      <text x="75" y="159" class="sub" data-i18n="architecture-spine-deferred-gloss">decisions consciously left for later</text>
+      <text x="12" y="178" font-size="11" font-weight="700" class="mono" data-i18n="architecture-spine-design-paradigm">Design Paradigm</text>
+      <text x="121" y="178" class="sub" data-i18n="architecture-spine-design-paradigm-gloss">the overall architectural style</text>
+      <text x="12" y="197" font-size="11" font-weight="700" class="mono" data-i18n="architecture-spine-inherited-invariants">Inherited Invariants</text>
+      <text x="154" y="197" class="sub" data-i18n="architecture-spine-inherited-invariants-gloss">parent spine ADs, read-only</text>
+      <text x="12" y="216" font-size="11" font-weight="700" class="mono" data-i18n="architecture-spine-purpose">Purpose</text>
+      <text x="68" y="216" class="sub" data-i18n="architecture-spine-purpose-gloss">build-substrate, discussion, report or deck</text>
+      <text x="12" y="235" font-size="11" font-weight="700" class="mono" data-i18n="architecture-spine-stack">Stack</text>
+      <text x="55" y="235" class="sub" data-i18n="architecture-spine-stack-gloss">technologies and versions, marked SEED</text>
+      <text x="12" y="254" font-size="11" font-weight="700" class="mono" data-i18n="architecture-spine-structural-seed">Structural Seed</text>
+      <text x="121" y="254" class="sub" data-i18n="architecture-spine-structural-seed-gloss">starting layout of folders and modules</text>
+      <g class="agent-architect">
+        <circle class="swatch" cx="424" cy="0" r="9"/>
+        <text class="badge" x="424" y="4">W</text>
+      </g>
+    </g>
+    <!-- Epics and stories -->
+    <g class="agent-pm" transform="translate(480 96)">
+      <rect class="node tone" width="440" height="193" rx="2"/>
+      <text x="12" y="22" font-size="13" font-weight="700" letter-spacing="1" data-i18n="epics-and-stories-title">EPICS AND STORIES</text>
+      <text x="12" y="39" class="sub mono" data-i18n="epics-and-stories-where">planning-artifacts/epics.md</text>
+      <path class="edge lens" d="M12 48 H428"/>
+      <text x="12" y="64" font-size="11" font-weight="700" class="mono" data-i18n="epics-and-stories-as-a-i-want-so-that">As a / I want / So that</text>
+      <text x="174" y="64" class="sub" data-i18n="epics-and-stories-as-a-i-want-so-that-gloss">the user-story sentence</text>
+      <text x="12" y="83" font-size="11" font-weight="700" class="mono" data-i18n="epics-and-stories-fr-coverage-map">FR Coverage Map</text>
+      <text x="121" y="83" class="sub" data-i18n="epics-and-stories-fr-coverage-map-gloss">which epic covers each requirement</text>
+      <text x="12" y="102" font-size="11" font-weight="700" class="mono" data-i18n="epics-and-stories-given-when-then-and">Given / When / Then / And</text>
+      <text x="187" y="102" class="sub" data-i18n="epics-and-stories-given-when-then-and-gloss">acceptance criterion format</text>
+      <text x="12" y="121" font-size="11" font-weight="700" class="mono" data-i18n="epics-and-stories-inputdocuments">inputDocuments</text>
+      <text x="114" y="121" class="sub" data-i18n="epics-and-stories-inputdocuments-gloss">planning files the epics came from</text>
+      <text x="12" y="140" font-size="11" font-weight="700" class="mono" data-i18n="epics-and-stories-requirements-inventory">Requirements Inventory</text>
+      <text x="167" y="140" class="sub" data-i18n="epics-and-stories-requirements-inventory-gloss">every FR, NFR and UX requirement</text>
+      <text x="12" y="159" font-size="11" font-weight="700" class="mono" data-i18n="epics-and-stories-stepscompleted">stepsCompleted</text>
+      <text x="114" y="159" class="sub" data-i18n="epics-and-stories-stepscompleted-gloss">finished steps, for resuming</text>
+      <text x="12" y="178" font-size="11" font-weight="700" class="mono" data-i18n="epics-and-stories-story-n-m">Story N.M</text>
+      <text x="81" y="178" class="sub" data-i18n="epics-and-stories-story-n-m-gloss">story M of epic N</text>
+      <g class="agent-pm">
+        <circle class="swatch" cx="424" cy="0" r="9"/>
+        <text class="badge" x="424" y="4">J</text>
+      </g>
+    </g>
+    <!-- Sprint status -->
+    <g transform="translate(480 305)">
+      <rect class="node" width="440" height="231" rx="2"/>
+      <text x="12" y="22" font-size="13" font-weight="700" letter-spacing="1" data-i18n="sprint-status-title">SPRINT STATUS</text>
+      <text x="12" y="39" class="sub mono" data-i18n="sprint-status-where">implementation-artifacts/sprint-status.yaml</text>
+      <path class="edge lens" d="M12 48 H428"/>
+      <text x="12" y="64" font-size="11" font-weight="700" class="mono" data-i18n="sprint-status-action-items">action_items</text>
+      <text x="101" y="64" class="sub" data-i18n="sprint-status-action-items-gloss">retro follow-ups: open, in-progress, done</text>
+      <text x="12" y="83" font-size="11" font-weight="700" class="mono" data-i18n="sprint-status-development-status">development_status</text>
+      <text x="141" y="83" class="sub" data-i18n="sprint-status-development-status-gloss">every key mapped to its status</text>
+      <text x="12" y="102" font-size="11" font-weight="700" class="mono" data-i18n="sprint-status-epic-n">epic-N</text>
+      <text x="62" y="102" class="sub" data-i18n="sprint-status-epic-n-gloss">epic: backlog, in-progress or done</text>
+      <text x="12" y="121" font-size="11" font-weight="700" class="mono" data-i18n="sprint-status-epic-n-retrospective">epic-N-retrospective</text>
+      <text x="154" y="121" class="sub" data-i18n="sprint-status-epic-n-retrospective-gloss">optional or done</text>
+      <text x="12" y="140" font-size="11" font-weight="700" class="mono" data-i18n="sprint-status-n-m-slug">N-M-slug</text>
+      <text x="75" y="140" class="sub" data-i18n="sprint-status-n-m-slug-gloss">story: backlog, ready-for-dev, in-progress, review, done</text>
+      <text x="12" y="159" font-size="11" font-weight="700" class="mono" data-i18n="sprint-status-project-key">project_key</text>
+      <text x="95" y="159" class="sub" data-i18n="sprint-status-project-key-gloss">tracker prefix; NOKEY if none</text>
+      <text x="12" y="178" font-size="11" font-weight="700" class="mono" data-i18n="sprint-status-readiness-gate">Readiness gate</text>
+      <text x="114" y="178" class="sub" data-i18n="sprint-status-readiness-gate-gloss">PASS, CONCERNS or FAIL</text>
+      <text x="12" y="197" font-size="11" font-weight="700" class="mono" data-i18n="sprint-status-story-location">story_location</text>
+      <text x="114" y="197" class="sub" data-i18n="sprint-status-story-location-gloss">where story files live</text>
+      <text x="12" y="216" font-size="11" font-weight="700" class="mono" data-i18n="sprint-status-tracking-system">tracking_system</text>
+      <text x="121" y="216" class="sub" data-i18n="sprint-status-tracking-system-gloss">file-system by default</text>
+      <g class="agent-dev">
+        <circle class="swatch" cx="424" cy="0" r="9"/>
+        <text class="badge" x="424" y="4">A</text>
+      </g>
+      <g class="agent-architect">
+        <circle class="swatch" cx="404" cy="0" r="9"/>
+        <text class="badge" x="404" y="4">W</text>
+      </g>
+      <g class="agent-pm">
+        <circle class="swatch" cx="384" cy="0" r="9"/>
+        <text class="badge" x="384" y="4">J</text>
+      </g>
+    </g>
+    <!-- Spec -->
+    <g transform="translate(480 552)">
+      <rect class="node" width="440" height="193" rx="2"/>
+      <text x="12" y="22" font-size="13" font-weight="700" letter-spacing="1" data-i18n="spec-title">SPEC</text>
+      <text x="12" y="39" class="sub mono" data-i18n="spec-where">specs/spec-{slug}/</text>
+      <path class="edge lens" d="M12 48 H428"/>
+      <text x="12" y="64" font-size="11" font-weight="700" class="mono" data-i18n="spec-done-checkpoint">done_checkpoint</text>
+      <text x="121" y="64" class="sub" data-i18n="spec-done-checkpoint-gloss">pause after the story completes</text>
+      <text x="12" y="83" font-size="11" font-weight="700" class="mono" data-i18n="spec-id-spec-slug">id: SPEC-{slug}</text>
+      <text x="121" y="83" class="sub" data-i18n="spec-id-spec-slug-gloss">the spec identifier</text>
+      <text x="12" y="102" font-size="11" font-weight="700" class="mono" data-i18n="spec-invoke-dev-with">invoke_dev_with</text>
+      <text x="121" y="102" class="sub" data-i18n="spec-invoke-dev-with-gloss">text appended to the dev prompt</text>
+      <text x="12" y="121" font-size="11" font-weight="700" class="mono" data-i18n="spec-sources">sources</text>
+      <text x="68" y="121" class="sub" data-i18n="spec-sources-gloss">absorbed documents, kept for audit only</text>
+      <text x="12" y="140" font-size="11" font-weight="700" class="mono" data-i18n="spec-spec-checkpoint">spec_checkpoint</text>
+      <text x="121" y="140" class="sub" data-i18n="spec-spec-checkpoint-gloss">human reviews the story spec before build</text>
+      <text x="12" y="159" font-size="11" font-weight="700" class="mono" data-i18n="spec-stories-yaml">stories.yaml</text>
+      <text x="101" y="159" class="sub" data-i18n="spec-stories-yaml-gloss">the spec split into stories; no status</text>
+      <text x="12" y="178" font-size="11" font-weight="700" class="mono" data-i18n="spec-success-signal">Success signal</text>
+      <text x="114" y="178" class="sub" data-i18n="spec-success-signal-gloss">the change you can test or demonstrate</text>
+    </g>
+    <!-- Build story file -->
+    <g class="agent-dev" transform="translate(480 761)">
+      <rect class="node tone" width="440" height="288" rx="2"/>
+      <text x="12" y="22" font-size="13" font-weight="700" letter-spacing="1" data-i18n="build-story-file-title">BUILD STORY FILE</text>
+      <text x="12" y="39" class="sub mono" data-i18n="build-story-file-where">implementation-artifacts/spec-{slug}.md</text>
+      <path class="edge lens" d="M12 48 H428"/>
+      <text x="12" y="64" font-size="11" font-weight="700" class="mono" data-i18n="build-story-file-auto-run-result">## Auto Run Result</text>
+      <text x="141" y="64" class="sub" data-i18n="build-story-file-auto-run-result-gloss">outcome of an unattended run</text>
+      <text x="12" y="83" font-size="11" font-weight="700" class="mono" data-i18n="build-story-file-boundaries-constraints">Boundaries &amp; Constraints</text>
+      <text x="180" y="83" class="sub" data-i18n="build-story-file-boundaries-constraints-gloss">what it must always and never do</text>
+      <text x="12" y="102" font-size="11" font-weight="700" class="mono" data-i18n="build-story-file-code-map">Code Map</text>
+      <text x="75" y="102" class="sub" data-i18n="build-story-file-code-map-gloss">files touched and why</text>
+      <text x="12" y="121" font-size="11" font-weight="700" class="mono" data-i18n="build-story-file-deferred-work-md">deferred-work.md</text>
+      <text x="128" y="121" class="sub" data-i18n="build-story-file-deferred-work-md-gloss">postponed findings with evidence</text>
+      <text x="12" y="140" font-size="11" font-weight="700" class="mono" data-i18n="build-story-file-epic-n-context-md">epic-N-context.md</text>
+      <text x="134" y="140" class="sub" data-i18n="build-story-file-epic-n-context-md-gloss">compiled context for one epic</text>
+      <text x="12" y="159" font-size="11" font-weight="700" class="mono" data-i18n="build-story-file-frozen-after-approval">Frozen after approval</text>
+      <text x="161" y="159" class="sub" data-i18n="build-story-file-frozen-after-approval-gloss">your intent; Build may not change it</text>
+      <text x="12" y="178" font-size="11" font-weight="700" class="mono" data-i18n="build-story-file-i-o-edge-case-matrix">I/O &amp; Edge-Case Matrix</text>
+      <text x="167" y="178" class="sub" data-i18n="build-story-file-i-o-edge-case-matrix-gloss">inputs, outputs and edge cases</text>
+      <text x="12" y="197" font-size="11" font-weight="700" class="mono" data-i18n="build-story-file-review-triage-log">Review Triage Log</text>
+      <text x="134" y="197" class="sub" data-i18n="build-story-file-review-triage-log-gloss">each finding and where it went</text>
+      <text x="12" y="216" font-size="11" font-weight="700" class="mono" data-i18n="build-story-file-route">Route</text>
+      <text x="55" y="216" class="sub" data-i18n="build-story-file-route-gloss">oneshot or full</text>
+      <text x="12" y="235" font-size="11" font-weight="700" class="mono" data-i18n="build-story-file-spec-change-log">Spec Change Log</text>
+      <text x="121" y="235" class="sub" data-i18n="build-story-file-spec-change-log-gloss">spec changes after work began</text>
+      <text x="12" y="254" font-size="11" font-weight="700" class="mono" data-i18n="build-story-file-status">Status</text>
+      <text x="62" y="254" class="sub" data-i18n="build-story-file-status-gloss">draft, ready-for-dev, in-progress, in-review, done</text>
+      <text x="12" y="273" font-size="11" font-weight="700" class="mono" data-i18n="build-story-file-type">Type</text>
+      <text x="48" y="273" class="sub" data-i18n="build-story-file-type-gloss">feature, bugfix, refactor or chore</text>
+      <g class="agent-dev">
+        <circle class="swatch" cx="424" cy="0" r="9"/>
+        <text class="badge" x="424" y="4">A</text>
+      </g>
+    </g>
+    <!-- Code review -->
+    <g class="agent-dev" transform="translate(480 1065)">
+      <rect class="node tone" width="440" height="155" rx="2"/>
+      <text x="12" y="22" font-size="13" font-weight="700" letter-spacing="1" data-i18n="code-review-title">CODE REVIEW</text>
+      <text x="12" y="39" class="sub mono" data-i18n="code-review-where">story file · deferred-work.md</text>
+      <path class="edge lens" d="M12 48 H428"/>
+      <text x="12" y="64" font-size="11" font-weight="700" class="mono" data-i18n="code-review-decision-needed">decision-needed</text>
+      <text x="121" y="64" class="sub" data-i18n="code-review-decision-needed-gloss">a finding only you can settle</text>
+      <text x="12" y="83" font-size="11" font-weight="700" class="mono" data-i18n="code-review-layer-lens">Layer / lens</text>
+      <text x="101" y="83" class="sub" data-i18n="code-review-layer-lens-gloss">one independent reviewer angle</text>
+      <text x="12" y="102" font-size="11" font-weight="700" class="mono" data-i18n="code-review-patch-defer-reject">patch / defer / reject</text>
+      <text x="167" y="102" class="sub" data-i18n="code-review-patch-defer-reject-gloss">fix now, record for later, or drop</text>
+      <text x="12" y="121" font-size="11" font-weight="700" class="mono" data-i18n="code-review-review-patch-review-defer">[Review][Patch] / [Review][Defer]</text>
+      <text x="240" y="121" class="sub" data-i18n="code-review-review-patch-review-defer-gloss">fix now, or defer</text>
+      <text x="12" y="140" font-size="11" font-weight="700" class="mono" data-i18n="code-review-review-mode">review_mode</text>
+      <text x="95" y="140" class="sub" data-i18n="code-review-review-mode-gloss">full with a spec, no-spec otherwise</text>
+      <g class="agent-dev">
+        <circle class="swatch" cx="424" cy="0" r="9"/>
+        <text class="badge" x="424" y="4">A</text>
+      </g>
+    </g>
+    <!-- Retrospective -->
+    <g class="agent-dev" transform="translate(480 1236)">
+      <rect class="node tone" width="440" height="174" rx="2"/>
+      <text x="12" y="22" font-size="13" font-weight="700" letter-spacing="1" data-i18n="retrospective-title">RETROSPECTIVE</text>
+      <text x="12" y="39" class="sub mono" data-i18n="retrospective-where">epic-{N}-retro-{date}.md</text>
+      <path class="edge lens" d="M12 48 H428"/>
+      <text x="12" y="64" font-size="11" font-weight="700" class="mono" data-i18n="retrospective-behavior-verification">Behavior verification</text>
+      <text x="161" y="64" class="sub" data-i18n="retrospective-behavior-verification-gloss">evidence the epic's promise was kept</text>
+      <text x="12" y="83" font-size="11" font-weight="700" class="mono" data-i18n="retrospective-criteria">criteria</text>
+      <text x="75" y="83" class="sub" data-i18n="retrospective-criteria-gloss">declared in the plan, or profiled</text>
+      <text x="12" y="102" font-size="11" font-weight="700" class="mono" data-i18n="retrospective-disposition">Disposition</text>
+      <text x="95" y="102" class="sub" data-i18n="retrospective-disposition-gloss">fix now, defer or accept as-is</text>
+      <text x="12" y="121" font-size="11" font-weight="700" class="mono" data-i18n="retrospective-epic-n-retro-item-n-slug">epic-N-retro-item-n-slug</text>
+      <text x="180" y="121" class="sub" data-i18n="retrospective-epic-n-retro-item-n-slug-gloss">action item ID</text>
+      <text x="12" y="140" font-size="11" font-weight="700" class="mono" data-i18n="retrospective-previous-retro-follow-through">Previous-retro follow-through</text>
+      <text x="213" y="140" class="sub" data-i18n="retrospective-previous-retro-follow-through-gloss">were last retro's items done?</text>
+      <text x="12" y="159" font-size="11" font-weight="700" class="mono" data-i18n="retrospective-verdict">verdict</text>
+      <text x="68" y="159" class="sub" data-i18n="retrospective-verdict-gloss">accepted, with open items, or rejected</text>
+      <g class="agent-dev">
+        <circle class="swatch" cx="424" cy="0" r="9"/>
+        <text class="badge" x="424" y="4">A</text>
+      </g>
+    </g>
+    <!-- Sprint change proposal -->
+    <g class="agent-pm" transform="translate(480 1426)">
+      <rect class="node tone" width="440" height="117" rx="2"/>
+      <text x="12" y="22" font-size="13" font-weight="700" letter-spacing="1" data-i18n="sprint-change-proposal-title">SPRINT CHANGE PROPOSAL</text>
+      <text x="12" y="39" class="sub mono" data-i18n="sprint-change-proposal-where">sprint-change-proposal-{date}.md</text>
+      <path class="edge lens" d="M12 48 H428"/>
+      <text x="12" y="64" font-size="11" font-weight="700" class="mono" data-i18n="sprint-change-proposal-implementation-handoff">Implementation Handoff</text>
+      <text x="167" y="64" class="sub" data-i18n="sprint-change-proposal-implementation-handoff-gloss">scope and who carries it out</text>
+      <text x="12" y="83" font-size="11" font-weight="700" class="mono" data-i18n="sprint-change-proposal-recommended-approach">Recommended Approach</text>
+      <text x="154" y="83" class="sub" data-i18n="sprint-change-proposal-recommended-approach-gloss">adjust, roll back, MVP review, hybrid</text>
+      <text x="12" y="102" font-size="11" font-weight="700" class="mono" data-i18n="sprint-change-proposal-scope">Scope</text>
+      <text x="55" y="102" class="sub" data-i18n="sprint-change-proposal-scope-gloss">Minor, Moderate or Major</text>
+      <g class="agent-pm">
+        <circle class="swatch" cx="424" cy="0" r="9"/>
+        <text class="badge" x="424" y="4">J</text>
+      </g>
+    </g>
+    <!-- Project context -->
+    <g class="agent-analyst" transform="translate(480 1559)">
+      <rect class="node tone" width="440" height="155" rx="2"/>
+      <text x="12" y="22" font-size="13" font-weight="700" letter-spacing="1" data-i18n="project-context-title">PROJECT CONTEXT</text>
+      <text x="12" y="39" class="sub mono" data-i18n="project-context-where">the bmad:context block in AGENTS.md</text>
+      <path class="edge lens" d="M12 48 H428"/>
+      <text x="12" y="64" font-size="11" font-weight="700" class="mono" data-i18n="project-context-known-pitfalls">Known pitfalls</text>
+      <text x="114" y="64" class="sub" data-i18n="project-context-known-pitfalls-gloss">mistakes agents made here</text>
+      <text x="12" y="83" font-size="11" font-weight="700" class="mono" data-i18n="project-context-ledger-decision">Ledger decision</text>
+      <text x="121" y="83" class="sub" data-i18n="project-context-ledger-decision-gloss">retain, rewrite, relocate, automate, delete</text>
+      <text x="12" y="102" font-size="11" font-weight="700" class="mono" data-i18n="project-context-policy">Policy</text>
+      <text x="62" y="102" class="sub" data-i18n="project-context-policy-gloss">what the organization requires</text>
+      <text x="12" y="121" font-size="11" font-weight="700" class="mono" data-i18n="project-context-running-and-verifying">Running and verifying</text>
+      <text x="161" y="121" class="sub" data-i18n="project-context-running-and-verifying-gloss">verified build and test commands</text>
+      <text x="12" y="140" font-size="11" font-weight="700" class="mono" data-i18n="project-context-verified-date-against-sha">Verified {date} against {SHA}</text>
+      <text x="213" y="140" class="sub" data-i18n="project-context-verified-date-against-sha-gloss">the commit last checked</text>
+      <g class="agent-analyst">
+        <circle class="swatch" cx="424" cy="0" r="9"/>
+        <text class="badge" x="424" y="4">M</text>
+      </g>
+    </g>
+    <!-- Brainstorming and forge -->
+    <g transform="translate(480 1730)">
+      <rect class="node" width="440" height="155" rx="2"/>
+      <text x="12" y="22" font-size="13" font-weight="700" letter-spacing="1" data-i18n="brainstorming-and-forge-title">BRAINSTORMING AND FORGE</text>
+      <text x="12" y="39" class="sub mono" data-i18n="brainstorming-and-forge-where">brainstorming/… · forge/{slug}/</text>
+      <path class="edge lens" d="M12 48 H428"/>
+      <text x="12" y="64" font-size="11" font-weight="700" class="mono" data-i18n="brainstorming-and-forge-brainstorm-intent-md">brainstorm-intent.md</text>
+      <text x="154" y="64" class="sub" data-i18n="brainstorming-and-forge-brainstorm-intent-md-gloss">chosen discoveries for the next skill</text>
+      <text x="12" y="83" font-size="11" font-weight="700" class="mono" data-i18n="brainstorming-and-forge-forge-report-html">forge-report.html</text>
+      <text x="134" y="83" class="sub" data-i18n="brainstorming-and-forge-forge-report-html-gloss">readable record of a forge session</text>
+      <text x="12" y="102" font-size="11" font-weight="700" class="mono" data-i18n="brainstorming-and-forge-forged-idea-md">forged-idea.md</text>
+      <text x="114" y="102" class="sub" data-i18n="brainstorming-and-forge-forged-idea-md-gloss">written only when HARDENED</text>
+      <text x="12" y="121" font-size="11" font-weight="700" class="mono" data-i18n="brainstorming-and-forge-outcome">Outcome</text>
+      <text x="68" y="121" class="sub" data-i18n="brainstorming-and-forge-outcome-gloss">HARDENED, KILLED or CLARIFIED</text>
+      <text x="12" y="140" font-size="11" font-weight="700" class="mono" data-i18n="brainstorming-and-forge-stance">Stance</text>
+      <text x="62" y="140" class="sub" data-i18n="brainstorming-and-forge-stance-gloss">Facilitator, Creative Partner, Ideate for me</text>
+      <g class="agent-analyst">
+        <circle class="swatch" cx="424" cy="0" r="9"/>
+        <text class="badge" x="424" y="4">M</text>
+      </g>
+    </g>
+    <!-- Agent colours -->
+    <g transform="translate(36 1911)">
+      <text x="0" y="13" class="k" data-i18n="legend-agent-colours">Agent colours</text>
+      <g class="agent-analyst">
+        <circle class="swatch" cx="129" cy="9" r="9"/>
+        <text class="badge" x="129" y="13">M</text>
+      </g>
+      <text x="144" y="13" font-size="12" data-i18n="legend-mary">Mary, Analyst</text>
+      <g class="agent-pm">
+        <circle class="swatch" cx="259" cy="9" r="9"/>
+        <text class="badge" x="259" y="13">J</text>
+      </g>
+      <text x="274" y="13" font-size="12" data-i18n="legend-john">John, PM</text>
+      <g class="agent-ux">
+        <circle class="swatch" cx="359" cy="9" r="9"/>
+        <text class="badge" x="359" y="13">S</text>
+      </g>
+      <text x="374" y="13" font-size="12" data-i18n="legend-sally">Sally, UX</text>
+      <g class="agent-architect">
+        <circle class="swatch" cx="459" cy="9" r="9"/>
+        <text class="badge" x="459" y="13">W</text>
+      </g>
+      <text x="474" y="13" font-size="12" data-i18n="legend-winston">Winston, Architect</text>
+      <g class="agent-dev">
+        <circle class="swatch" cx="621" cy="9" r="9"/>
+        <text class="badge" x="621" y="13">A</text>
+      </g>
+      <text x="636" y="13" font-size="12" data-i18n="legend-amelia">Amelia, Developer</text>
+      <rect class="node" x="768" y="1" width="16" height="16" rx="2"/>
+      <text x="792" y="13" font-size="12" data-i18n="legend-no-agent">no agent</text>
+    </g>
+  </g>
+</svg>

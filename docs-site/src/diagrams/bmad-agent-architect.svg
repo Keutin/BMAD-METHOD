@@ -1,0 +1,78 @@
+<svg class="bmad-diagram" xmlns="http://www.w3.org/2000/svg" width="940" height="450" viewBox="0 0 940 450" role="img" aria-labelledby="ar-title ar-desc">
+  <title id="ar-title">Winston, System Architect: what each menu skill reads, writes and hands on</title>
+  <desc id="ar-desc">Winston, System Architect, bmad-agent-architect. CA bmad-architecture reads PRD or SPEC.md, UX design (optional), existing code (optional); writes plan/architecture/ architecture-{project}- {date}/ARCHITECTURE- SPINE.md; next CE epics, IR readiness gate. IR bmad-sprint-planning reads planning artifacts, epics.md; writes PASS · CONCERNS · FAIL plan/implementation- readiness.md on FAIL; next SP sprint plan, CC on FAIL.</desc>
+  <defs>
+    <marker id="ar-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path class="head" d="M 0 0 L 10 5 L 0 10 z"/>
+    </marker>
+  </defs>
+
+  <g fill="var(--dg-ink)">
+    <text x="470" y="40" font-size="20" font-weight="700" text-anchor="middle" letter-spacing="1" data-i18n="heading">WINSTON, SYSTEM ARCHITECT</text>
+    <text x="470" y="64" font-size="14" text-anchor="middle" data-i18n="subtitle">Records the decisions that keep separately built parts consistent, then checks readiness.</text>
+    <g class="agent-architect" transform="translate(20 88)">
+      <rect class="node tone" width="900" height="44" rx="2"/>
+      <rect class="swatch" width="6" height="44"/>
+      <circle class="swatch" cx="34" cy="22" r="9"/>
+      <text class="badge" x="34" y="26">W</text>
+      <text x="52" y="27" font-size="16" font-weight="700" data-i18n="name">Winston</text>
+      <text x="139" y="27" class="sub" data-i18n="title">System Architect</text>
+      <text x="888" y="27" class="sub mono" text-anchor="end" data-i18n="skill-id">bmad-agent-architect</text>
+    </g>
+    <text x="22" y="160" class="k" data-i18n="col-reads">READS</text>
+    <text x="218" y="160" class="k" data-i18n="col-skill">SKILL</text>
+    <text x="484" y="160" class="k" data-i18n="col-writes">WRITES</text>
+    <text x="780" y="160" class="k" data-i18n="col-next">NEXT</text>
+    <!-- CA bmad-architecture -->
+    <g class="agent-architect">
+      <rect class="node" x="20" y="172" width="170" height="100" rx="2"/>
+      <text x="32" y="208.0" font-size="12" data-i18n="ca-reads-prd-or-spec-md">PRD or SPEC.md</text>
+      <text x="32" y="226.0" class="sub" data-i18n="ca-reads-ux-design">UX design</text>
+      <text x="32" y="244.0" class="sub" data-i18n="ca-reads-existing-code">existing code</text>
+      <rect class="node hot tone" x="216" y="172" width="240" height="100" rx="2"/>
+      <rect class="code-chip" x="228" y="191.0" width="32" height="22" rx="2"/>
+      <text x="244.0" y="206.0" class="mono" font-size="12" font-weight="700" text-anchor="middle" data-i18n="code-ca-ca">CA</text>
+      <text x="228" y="233.0" class="mono" font-size="12" font-weight="700" data-i18n="ca-skill-bmad-architecture">bmad-architecture</text>
+      <text x="228" y="251.0" class="sub" data-i18n="ca-purpose">architecture spine</text>
+      <rect class="node tone" x="482" y="172" width="270" height="100" rx="2"/>
+      <text x="494" y="199.0" class="mono" font-size="12" data-i18n="ca-writes-plan-architecture">plan/architecture/</text>
+      <text x="506" y="217.0" class="mono" font-size="12" data-i18n="ca-writes-architecture-project">architecture-{project}-</text>
+      <text x="506" y="235.0" class="mono" font-size="12" data-i18n="ca-writes-date-architecture">{date}/ARCHITECTURE-</text>
+      <text x="506" y="253.0" class="mono" font-size="12" data-i18n="ca-writes-spine-md">SPINE.md</text>
+      <rect class="node" x="778" y="172" width="142" height="100" rx="2"/>
+      <g class="agent-pm"><circle class="swatch" cx="798" cy="210.0" r="8"/><text class="badge" x="798" y="213.5">J</text></g>
+      <text x="812" y="214.0" font-size="12" data-i18n="ca-next-ce-epics">CE epics</text>
+      <g class="agent-architect"><circle class="swatch" cx="798" cy="234.0" r="8"/><text class="badge" x="798" y="237.5">W</text></g>
+      <text x="812" y="238.0" font-size="12" data-i18n="ca-next-ir-readiness-gate">IR readiness gate</text>
+      <path class="edge" d="M190 222.0 H214" marker-end="url(#ar-arrow)"/>
+      <path class="edge" d="M456 222.0 H480" marker-end="url(#ar-arrow)"/>
+      <path class="edge" d="M752 222.0 H776" marker-end="url(#ar-arrow)"/>
+    </g>
+    <!-- IR bmad-sprint-planning -->
+    <g class="agent-architect">
+      <rect class="node" x="20" y="286" width="170" height="84" rx="2"/>
+      <text x="32" y="323.0" font-size="12" data-i18n="ir-reads-planning-artifacts">planning artifacts</text>
+      <text x="32" y="341.0" font-size="12" data-i18n="ir-reads-epics-md">epics.md</text>
+      <rect class="node hot tone" x="216" y="286" width="240" height="84" rx="2"/>
+      <rect class="code-chip" x="228" y="297.0" width="32" height="22" rx="2"/>
+      <text x="244.0" y="312.0" class="mono" font-size="12" font-weight="700" text-anchor="middle" data-i18n="code-ir-ir">IR</text>
+      <text x="228" y="339.0" class="mono" font-size="12" font-weight="700" data-i18n="ir-skill-bmad-sprint-planning">bmad-sprint-planning</text>
+      <text x="228" y="357.0" class="sub" data-i18n="ir-purpose">readiness gate only</text>
+      <rect class="node tone" x="482" y="286" width="270" height="84" rx="2"/>
+      <text x="494" y="314.0" font-size="12" data-i18n="ir-writes-pass-concerns-fail">PASS · CONCERNS · FAIL</text>
+      <text x="494" y="332.0" class="sub mono" data-i18n="ir-writes-plan-implementation">plan/implementation-</text>
+      <text x="506" y="350.0" class="sub mono" data-i18n="ir-writes-readiness-md-on-fail">readiness.md on FAIL</text>
+      <rect class="node" x="778" y="286" width="142" height="84" rx="2"/>
+      <g class="agent-dev"><circle class="swatch" cx="798" cy="316.0" r="8"/><text class="badge" x="798" y="319.5">A</text></g>
+      <text x="812" y="320.0" font-size="12" data-i18n="ir-next-sp-sprint-plan">SP sprint plan</text>
+      <g class="agent-pm"><circle class="swatch" cx="798" cy="340.0" r="8"/><text class="badge" x="798" y="343.5">J</text></g>
+      <text x="812" y="344.0" font-size="12" data-i18n="ir-next-cc-on-fail">CC on FAIL</text>
+      <path class="edge" d="M190 328.0 H214" marker-end="url(#ar-arrow)"/>
+      <path class="edge" d="M456 328.0 H480" marker-end="url(#ar-arrow)"/>
+      <path class="edge" d="M752 328.0 H776" marker-end="url(#ar-arrow)"/>
+    </g>
+    <path class="edge lens" d="M20 392 H920"/>
+    <text x="20" y="414" class="sub" data-i18n="legend-optional">Grey lines are optional or conditional; a dashed arrow means every input is optional.</text>
+    <text x="20" y="432" class="sub mono" data-i18n="legend-paths">plan/ = _bmad-output/planning-artifacts/   impl/ = _bmad-output/implementation-artifacts/   out/ = _bmad-output/</text>
+  </g>
+</svg>
